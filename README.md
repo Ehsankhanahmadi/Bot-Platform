@@ -29,3 +29,26 @@ feature/*  →  dev  →  main
 
 * **All merges must be performed via GitHub Pull Requests.**
 * Every Pull Request must be reviewed to ensure the code quality, project structure, and coding standards comply with the project's guidelines before it is merged.
+
+---
+
+## ⚠️ Docker
+
+Please **do not modify** any Docker-related files or configurations.
+If you believe a Docker configuration needs to be changed, please leave a comment in the corresponding task assigned to you in **Notion**.
+All Docker configuration and maintenance are managed by the project owner. If any changes are required, simply leave a message instead of modifying the files directly.
+After pulling the latest changes from the repository, use the following command to build and run the project:
+
+```text
+docker compose up -d --build
+```
+
+This command will build the project (if necessary) and start all required containers.
+Thanks to the mounted Docker volumes, any changes you make to the source code will be reflected immediately. **There is no need to rebuild or restart the containers after every code change.** In most cases, simply refresh your browser or restart the client application to see the updates.
+Only files that belong to package or tool configurations are allowed to use **PascalCase** or **uppercase** naming conventions. For example:
+
+```text
+Dockerfile
+```
+
+All other project files and directories must follow the project's naming conventions described above.
