@@ -11,3 +11,24 @@ services:
       - "8000:8000"
     env_file:
       - .env
+    depends_on:
+      - rabbitmq
+  
+  celery:
+    container_name: celery_bot_platform
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    depends_on:
+      - rabbitmq
+  
+  rabbitmq:
+    image: rabbitmq:4-management
+    container_name: rabbitmq_bot_platform
+    ports:
+    - "5672:5672"
+    - "15672:15672"
