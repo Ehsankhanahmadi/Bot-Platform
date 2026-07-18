@@ -7,6 +7,7 @@ This file outlines the code structure and formatting; the page will also be upda
 
 The project structure **must** follow these rules:
 
+* before start coding please check **auto save** in vscode is acitve
 * All directories and folders **must** use **lowercase** names.
 * All classes and functions **must** follow the **PascalCase** naming convention.
 
