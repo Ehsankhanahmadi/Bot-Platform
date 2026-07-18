@@ -12,19 +12,22 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 
 from pathlib import Path
 import os
+import environ
+
+env = environ.Env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+env.read_env(BASE_DIR / ".env")
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-!z92grznj(!je_d6e34&9+*84bi3geuwm8u16s@h+8s&9mp3^)'
+SECRET_KEY = env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env.bool("DEBUG")
 
 ALLOWED_HOSTS = []
 
@@ -41,6 +44,7 @@ INSTALLED_APPS = [
     # app
     'rest_framework',
     'drf_spectacular',
+    'django_celery_results',
 ]
 
 MIDDLEWARE = [
@@ -77,9 +81,13 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": env("POSTGRES_DB"),
+        "USER": env("POSTGRES_USER"),
+        "PASSWORD": env("POSTGRES_PASSWORD"),
+        "HOST": env("POSTGRES_HOST"),
+        "PORT": env("POSTGRES_PORT"),
     }
 }
 
@@ -139,5 +147,5 @@ SPECTACULAR_SETTINGS = {
 
 # Celery setting
 
-CELERY_BROKER_URL = os.environ.get('CELERY_BROKER')
-CELERY_RESULT_BACKEND = os.environ.get('CELERY_BACKEND')
+CELERY_BROKER_URL = env('CELERY_BROKER')
+CELERY_RESULT_BACKEND = "django-db"
