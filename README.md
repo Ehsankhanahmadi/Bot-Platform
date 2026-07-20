@@ -1,6 +1,43 @@
 # Bot Platform project
 This file outlines the code structure and formatting; the page will also be updated and expanded as the project progresses.
 
+# 📚 Project Resources
+Please submit an access request after opening the Notion links so your account can be authorized to access the workspace.
+Once your access has been approved, click the ⭐ **Star** button at the top of each page to add it to your favorites for quick daily access.
+
+---
+
+## 📝 Notion
+
+### 🏠 Home
+https://app.notion.com/p/Home-39c0b7b92edb8066b98ad0fbaf04f700?source=copy_link
+
+### 🎯 Goals Tracker
+https://app.notion.com/p/39c0b7b92edb80de883adf7e3aa87956?v=39c0b7b92edb80f69cdf000c69fb8141&source=copy_link
+
+### ✅ Task Tracker
+https://app.notion.com/p/39c0b7b92edb807ea644e608b29a3ff9?v=39c0b7b92edb80a5a7a8000cd392e071&source=copy_link
+
+---
+
+## 💬 Communication
+
+### Telegram
+
+> _Coming Soon_
+
+### Bale
+
+> _Coming Soon_
+
+---
+
+## 💻 GitHub
+
+GitHub Profile:
+https://github.com/Ehsankhanahmadi
+
+
 # Project Development Guidelines
 
 ## ⚠️ Project Structure
