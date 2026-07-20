@@ -87,6 +87,7 @@ Only files that belong to package or tool configurations are allowed to use **Pa
 
 ```text
 Dockerfile
+README.md
 ```
 
 All other project files and directories must follow the project's naming conventions described above.
