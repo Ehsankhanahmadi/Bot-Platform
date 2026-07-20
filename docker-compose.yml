@@ -2,7 +2,7 @@ services:
   drf:
     container_name: drf_bot_platform
     build:
-      context: .
+      context: ./Bot
       dockerfile: Dockerfile
     command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
     environment:
@@ -10,7 +10,7 @@ services:
       DEBUG: ${DEBUG}
       SECRET_KEY: ${SECRET_KEY}
     volumes:
-      - .:/app/
+      - ./Bot:/app/
     ports:
       - "8000:8000"
     env_file:
@@ -24,14 +24,15 @@ services:
   celery:
     container_name: celery_bot_platform
     build:
-      context: .
+      context: ./Bot
       dockerfile: Dockerfile
+    command: celery --app=config worker -l INFO
     environment:
       ALLOWED_HOSTS: ${ALLOWED_HOSTS}
       DEBUG: ${DEBUG}
       SECRET_KEY: ${SECRET_KEY}
     volumes:
-      - .:/app/
+      - ./Bot:/app/
     env_file:
       - .env
     depends_on:
