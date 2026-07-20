@@ -11,7 +11,7 @@ The project structure **must** follow these rules:
 * All directories and folders **must** use **lowercase** names.
 * All classes and functions **must** follow the **PascalCase** naming convention.
 
----
+--- 
 
 ## ⚠️ Git Workflow
 
