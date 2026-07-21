@@ -26,7 +26,7 @@ services:
     build:
       context: ./Bot
       dockerfile: Dockerfile
-    command: celery --app=config worker -l INFO
+    command: celery -A config worker -l INFO
     environment:
       ALLOWED_HOSTS: ${ALLOWED_HOSTS}
       DEBUG: ${DEBUG}
@@ -38,6 +38,7 @@ services:
     depends_on:
       - postgres
       - rabbitmq
+      - drf
     networks:
       - bot_platform
   
