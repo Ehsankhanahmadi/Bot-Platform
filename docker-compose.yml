@@ -42,6 +42,21 @@ services:
     networks:
       - bot_platform
   
+  flower:
+    image: mher/flower
+    container_name: flower_bot_platform
+    restart: unless-stopped
+    command: celery --broker=${CELERY_BROKER} flower --port=5555 --basic-auth=${FLOWER_USER}:${FLOWER_PASSWORD}
+    ports:
+      - "5555:5555"
+    env_file:
+      - .env
+    depends_on:
+      - rabbitmq
+      - celery
+    networks:
+      - bot_platform
+  
   postgres:
     image: postgres:17
     container_name: postgres_bot_platform
