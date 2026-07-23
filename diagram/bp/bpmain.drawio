@@ -1,275 +1,303 @@
-<mxfile host="65bd71144e">
-    <diagram name="Page-1" id="nOwWm7EmSlVC-5TWRoDb">
-        <mxGraphModel dx="3010" dy="2178" grid="1" gridSize="2" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
-            <root>
-                <mxCell id="0"/>
-                <mxCell id="1" parent="0"/>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="gDkjoUpcuoELF5REZ2hQ-2" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="400" y="280" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-2" value="&lt;h1&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(225, 213, 231));&quot;&gt;Bot mother or main bot&lt;/span&gt;&lt;/h1&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#1ba1e2;sketch=1;fontColor=#ffffff;strokeColor=#006EAF;opacity=50;shadow=0;glass=0;" parent="1" vertex="1">
-                    <mxGeometry x="720" y="40" width="400" height="160" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="gDkjoUpcuoELF5REZ2hQ-9" target="gDkjoUpcuoELF5REZ2hQ-2" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-9" value="" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=0;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="720" y="300" width="400" height="160" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-11" value="&lt;div&gt;بات مادر گرفتن توکن و ساخت بات بلافاصله&amp;nbsp;&lt;/div&gt;" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-9" vertex="1">
-                    <mxGeometry width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-14" value="&lt;div&gt;هر کسب و کار میتواند چندین ربات بسازد&amp;nbsp;&lt;/div&gt;" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.bottomButton;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-9" vertex="1">
-                    <mxGeometry y="30" width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-13" value="&lt;div&gt;ربات ها را میتواند عملیات کراد را انجام دهد&amp;nbsp;&lt;/div&gt;" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-9" vertex="1">
-                    <mxGeometry y="60" width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-12" value="&lt;div&gt;ایجاد سیستم احراز هویت کسب و کار های برای مدیریت انها&lt;/div&gt;" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-9" vertex="1">
-                    <mxGeometry y="90" width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-28" value="&lt;div&gt;&lt;div&gt;مسائل مربوط به شخصی سازی ربات مثل پروفایل و متن و تصویر قبل از استارت در این ناحیه اموزش داده میشود&amp;nbsp;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-9" vertex="1">
-                    <mxGeometry y="120" width="400" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-10" value="&lt;h1&gt;ویژگی های بات مادر&lt;/h1&gt;" style="text;strokeColor=#DFDFDF;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.topButton;rSize=5;fontColor=#6C767D;" parent="1" vertex="1">
-                    <mxGeometry x="720" y="240" width="400" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="gDkjoUpcuoELF5REZ2hQ-19" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="199.74" y="-160" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="gDkjoUpcuoELF5REZ2hQ-19" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="200" y="880" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="gDkjoUpcuoELF5REZ2hQ-19" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="160" y="640" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="gDkjoUpcuoELF5REZ2hQ-19" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="160" y="80.00000000000023" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="gDkjoUpcuoELF5REZ2hQ-19" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-160" y="360.2592592592591" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-19" value="&lt;h1&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;other bot or bot childern&lt;/font&gt;&lt;/h1&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#0050ef;sketch=1;fontColor=#ffffff;strokeColor=#001DBC;opacity=50;shadow=0;glass=0;" parent="1" vertex="1">
-                    <mxGeometry x="200" y="280" width="410" height="160" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="gDkjoUpcuoELF5REZ2hQ-20" target="gDkjoUpcuoELF5REZ2hQ-19" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-20" value="" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=0;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="210" y="540" width="400" height="130" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-21" value="ربات ساخته شده محل اجرای ویژگی ها برای صاحب کسب و کار هست" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-20" vertex="1">
-                    <mxGeometry width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-22" value="در این ربات صاحب کسب و کار میتواند ویژگی های مورد نظر خود را انجام دهد" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.bottomButton;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-20" vertex="1">
-                    <mxGeometry y="30" width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-24" value="تمام ویژگی هایی که بعد از این ویژگی بات فرزند نمایش داده میشود قابلیت تیک فعال بودن و نبودن را دارد" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-20" vertex="1">
-                    <mxGeometry y="60" width="400" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-26" value="قابلیت اضافه کردن ادمین و دادن دسترسی به ربات و کراد ان" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-20" vertex="1">
-                    <mxGeometry y="100" width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-25" value="&lt;h1&gt;ویژگی های بات فرزند یا کسب و کار&lt;/h1&gt;" style="text;strokeColor=#DFDFDF;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.topButton;rSize=5;fontColor=#6C767D;" parent="1" vertex="1">
-                    <mxGeometry x="210" y="480" width="400" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="160" y="80" as="sourcePoint"/>
-                        <mxPoint x="-160" y="80.26" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="200" y="-159.96" as="sourcePoint"/>
-                        <mxPoint x="-160" y="-159.70074074074088" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="160" y="640.04" as="sourcePoint"/>
-                        <mxPoint x="-160" y="640.3" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="200" y="880.04" as="sourcePoint"/>
-                        <mxPoint x="-160" y="880.2992592592591" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-39" value="&lt;h1&gt;&lt;font style=&quot;font-size: 25px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;personal bot&lt;/font&gt;&lt;/h1&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#d5e8d4;sketch=1;strokeColor=#82b366;opacity=50;shadow=0;glass=0;gradientColor=#97d077;" parent="1" vertex="1">
-                    <mxGeometry x="-440" y="-200" width="280" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="gDkjoUpcuoELF5REZ2hQ-40" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-480" y="80.04347826086973" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-40" value="&lt;h1&gt;&lt;span style=&quot;font-size: 25px;&quot;&gt;form builder&lt;/span&gt;&lt;/h1&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#dae8fc;sketch=1;strokeColor=#6c8ebf;opacity=50;shadow=0;glass=0;gradientColor=#7ea6e0;" parent="1" vertex="1">
-                    <mxGeometry x="-440" y="40" width="280" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="gDkjoUpcuoELF5REZ2hQ-41" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-480" y="360" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-41" value="&lt;h1&gt;&lt;span style=&quot;font-size: 25px;&quot;&gt;shop bot&lt;/span&gt;&lt;/h1&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#f8cecc;sketch=1;strokeColor=#b85450;opacity=50;shadow=0;glass=0;gradientColor=#ea6b66;" parent="1" vertex="1">
-                    <mxGeometry x="-440" y="320" width="280" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="gDkjoUpcuoELF5REZ2hQ-42" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-480" y="640.04347826087" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-42" value="&lt;h1&gt;&lt;span style=&quot;font-size: 25px;&quot;&gt;chat bot&lt;/span&gt;&lt;/h1&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#d5e8d4;sketch=1;strokeColor=#82b366;opacity=50;shadow=0;glass=0;gradientColor=light-dark(#97D077,#238A15);" parent="1" vertex="1">
-                    <mxGeometry x="-440" y="600" width="280" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="gDkjoUpcuoELF5REZ2hQ-43" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-480" y="880.1034482758623" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-43" value="&lt;h1&gt;&lt;span style=&quot;font-size: 25px;&quot;&gt;agent bot&lt;/span&gt;&lt;/h1&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#e6d0de;sketch=1;strokeColor=#996185;opacity=50;shadow=0;glass=0;gradientColor=#d5739d;" parent="1" vertex="1">
-                    <mxGeometry x="-440" y="840" width="280" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-44" value="" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=0;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="-880" y="-430" width="400" height="430" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-45" value="قابلیت ساخت منو شخصی با تمام متن های دلخواه" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-44" vertex="1">
-                    <mxGeometry width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-46" value="قابلیت کراد برای منوی شخصی" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.bottomButton;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-44" vertex="1">
-                    <mxGeometry y="30" width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-47" value="فابلیت پیام های شخصی برای ارسال و کراد روی تمام پیام ها" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-44" vertex="1">
-                    <mxGeometry y="60" width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-48" value="قابلیت قرار دادن تعداد دکمه دلخواه برای پیام ها بعلاوه متن و عملکرد دلخواه هر دکمه" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-44" vertex="1">
-                    <mxGeometry y="90" width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-54" value="&lt;div&gt;قابلیت استفاده از دکمه های پیش ساخته و پایه&amp;nbsp;&lt;/div&gt;" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-44" vertex="1">
-                    <mxGeometry y="120" width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-55" value="قابلیت کراد بر روی تمام دکمه ها" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-44" vertex="1">
-                    <mxGeometry y="150" width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-56" value="دکمه های پیش ساخته ( گرفتن شماره تماس و اطلاعات کاربر/ گذاشتن عضویت اجباری برای کانال ها / گرفتن کوری استرینگ برای کلیک بر روی یک لینک و نمایش اطلاعات دلخواه در ربات / خروجی گرفتن اکسل اطلاعات کاربران /  و... )" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-44" vertex="1">
-                    <mxGeometry y="180" width="400" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-57" value="قابلیت مدیریت کانال و گروه با ربات" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-44" vertex="1">
-                    <mxGeometry y="230" width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-58" value="قابلیت ادمین کردن ربات و کامند دلخواه برای مدیریت ربات" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-44" vertex="1">
-                    <mxGeometry y="260" width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-59" value="قابلیت مدیریت چند اپلیکیشن و بات ان در یک ربات" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-44" vertex="1">
-                    <mxGeometry y="290" width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-60" value="قابلیت فروش فضای ذخیره سازی برای ارسال فیلم و عکس و صدا برای کاربر ها در صورت نیاز قابلیت شخصی سازی کامند استارت و کراد روی ان" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-44" vertex="1">
-                    <mxGeometry y="320" width="400" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-61" value="قابلیت ارسال پیام به کاربران مورد نظر با پیام دلخواه یا ارسال پیام گروهی به افراد" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-44" vertex="1">
-                    <mxGeometry y="360" width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-62" value="کورن جاب برای ربات ها شخص میتواند یک زمان را مشخص کند تا در یک زمان در ربات اتفاق خاصی بی افتد یا هر چند وقت یک بار یک اتفاق خاصی بی افتد" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-44" vertex="1">
-                    <mxGeometry y="390" width="400" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-50" value="&lt;h1&gt;ویژگی های بات شخصی&lt;/h1&gt;" style="text;strokeColor=#DFDFDF;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.topButton;rSize=5;fontColor=#6C767D;" parent="1" vertex="1">
-                    <mxGeometry x="-880" y="-490" width="400" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="gDkjoUpcuoELF5REZ2hQ-39" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-480" y="-160" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-64" value="" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=0;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="-880" y="80" width="400" height="90" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-65" value="قابلیت ساخت پرس لاین و عملیات کراد بر روی پرس لاین" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-64" vertex="1">
-                    <mxGeometry width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-66" value="قابلیت اجرای هر نوع سوالی در پرسلاین همین طور ارسال عکس ویدیو و صدا در پرس لاین" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.bottomButton;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-64" vertex="1">
-                    <mxGeometry y="30" width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-68" value="قابلیت خروجی گرفتن اکسل برای پرس لاین و دادن دیتا تحلیل شده در پاسخ های ثبت شده" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-64" vertex="1">
-                    <mxGeometry y="60" width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-69" value="&lt;h1&gt;ویژگی های ربات فرم ساز&lt;/h1&gt;" style="text;strokeColor=#DFDFDF;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.topButton;rSize=5;fontColor=#6C767D;" parent="1" vertex="1">
-                    <mxGeometry x="-880" y="20" width="400" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-70" value="" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=0;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="-880" y="250" width="400" height="200" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-71" value="ایجاد سیستم فروشگاهی برای مدیریت پرداخت های کاربران" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-70" vertex="1">
-                    <mxGeometry width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-72" value="قابلیت عملیات کراد برای سیستم های فروشگاهی برای هر محصول و فروشگاه" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.bottomButton;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-70" vertex="1">
-                    <mxGeometry y="30" width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-73" value="ایجاد قابلیت گذاشتن کد تخفیف برای محصول و کراد ان" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-70" vertex="1">
-                    <mxGeometry y="60" width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-76" value="سیستم مدیریت کاربران خریداری کرده از ربات و همین طور مدیریت انها و ارسال رسید خرید و انواع کار های مربوط به فروشگاه با عملیات کراد" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-70" vertex="1">
-                    <mxGeometry y="90" width="400" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-77" value="سیستم مدیریت وضعیت محصول در حال ارسال و ارسال اطلاعات محصول در حال ارسال به عنوان مثال تغییر وضعیت محصول در حال ارسال از بسته بندی به ارسال به پست" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-70" vertex="1">
-                    <mxGeometry y="130" width="400" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-78" value="خروجی دادن اکسل به ادمین برای مدیریت فروشگاه به شکل کامل" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-70" vertex="1">
-                    <mxGeometry y="170" width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-74" value="&lt;h1&gt;ویژگی های ربات فروشگاهی&lt;/h1&gt;" style="text;strokeColor=#DFDFDF;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.topButton;rSize=5;fontColor=#6C767D;" parent="1" vertex="1">
-                    <mxGeometry x="-880" y="190" width="400" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-80" value="" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=0;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="-880" y="590" width="400" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-81" value="سیستم چت و تیکتینگ برای مدیریت کاربران هر کسب و کاری به شکل" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-80" vertex="1">
-                    <mxGeometry width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-82" value="ساخت و مدیریت چت روم های مختلف و کراد هر چت روم برای کسب و کار نام چت روم" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.bottomButton;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-80" vertex="1">
-                    <mxGeometry y="30" width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-83" value="افرادی که میتوانند پیام دهند افرادی که میتوانند مدیریت کنن مدیریت ادمین های چت روم" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-80" vertex="1">
-                    <mxGeometry y="60" width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-86" value="قابلیت ارسال تصویر ویس و ویدیو در چت روم" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-80" vertex="1">
-                    <mxGeometry y="90" width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-87" value="&lt;h1&gt;ویژگی های ربات فروشگاهی&lt;/h1&gt;" style="text;strokeColor=#DFDFDF;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.topButton;rSize=5;fontColor=#6C767D;" parent="1" vertex="1">
-                    <mxGeometry x="-880" y="530" width="400" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-90" value="" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=0;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="-880" y="880" width="400" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-93" value="ایجنت پاسخ گوی کسب و کار" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-90" vertex="1">
-                    <mxGeometry width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-94" value="هر کسب و کار دیتا های خود را میدهد و پاسخ گوهی انلاین برای کسب و کار خودش میگیرد" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" parent="gDkjoUpcuoELF5REZ2hQ-90" vertex="1">
-                    <mxGeometry y="30" width="400" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-95" value="&lt;h1&gt;ویژگی های ربات ایجنت پاسخگو&lt;/h1&gt;" style="text;strokeColor=#DFDFDF;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.topButton;rSize=5;fontColor=#6C767D;" parent="1" vertex="1">
-                    <mxGeometry x="-880" y="820" width="400" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-97" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;legacyAnchorPoints=0;rotation=90;size=0.5;" parent="1" vertex="1">
-                    <mxGeometry x="395" y="490" width="30" height="400" as="geometry"/>
-                </mxCell>
-                <mxCell id="gDkjoUpcuoELF5REZ2hQ-98" value="برای هر ویژگی که به ربات های کسب و کار اضافه میشود باید دیاگرام کامل توسعه ان به شکل جدا کشیده شود&amp;nbsp;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=13;" parent="1" vertex="1">
-                    <mxGeometry x="210" y="710" width="400" height="30" as="geometry"/>
-                </mxCell>
-            </root>
-        </mxGraphModel>
-    </diagram>
+<mxfile host="Electron">
+  <diagram name="Page-1" id="nOwWm7EmSlVC-5TWRoDb">
+    <mxGraphModel dx="3918" dy="2578" grid="1" gridSize="2" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-18" edge="1" parent="1" source="gDkjoUpcuoELF5REZ2hQ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#1ba1e2;sketch=1;fontColor=#ffffff;strokeColor=#006EAF;opacity=50;shadow=0;glass=0;" value="&lt;h1&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(225, 213, 231));&quot;&gt;Bot mother or main bot&lt;/span&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="160" width="400" x="720" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-16" edge="1" parent="1" source="gDkjoUpcuoELF5REZ2hQ-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="gDkjoUpcuoELF5REZ2hQ-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-9" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=0;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="160" width="400" x="720" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="j-Ye87-vP6SMDf9KKfTC-1" edge="1" parent="gDkjoUpcuoELF5REZ2hQ-9" source="gDkjoUpcuoELF5REZ2hQ-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="15.400000000000091" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-11" parent="gDkjoUpcuoELF5REZ2hQ-9" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="&lt;div&gt;بات مادر گرفتن توکن و ساخت بات بلافاصله&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="400" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-14" parent="gDkjoUpcuoELF5REZ2hQ-9" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.bottomButton;rSize=5;fontColor=#000000;" value="&lt;div&gt;هر کسب و کار میتواند چندین ربات بسازد&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="400" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-13" parent="gDkjoUpcuoELF5REZ2hQ-9" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="&lt;div&gt;ربات ها را میتواند عملیات کراد را انجام دهد&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="400" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-12" parent="gDkjoUpcuoELF5REZ2hQ-9" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="&lt;div&gt;ایجاد سیستم احراز هویت کسب و کار های برای مدیریت انها&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="400" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-28" parent="gDkjoUpcuoELF5REZ2hQ-9" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="&lt;div&gt;&lt;div&gt;مسائل مربوط به شخصی سازی ربات مثل پروفایل و متن و تصویر قبل از استارت در این ناحیه اموزش داده میشود&amp;nbsp;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="400" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-10" parent="1" style="text;strokeColor=#DFDFDF;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.topButton;rSize=5;fontColor=#6C767D;" value="&lt;h1&gt;ویژگی های بات مادر&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="60" width="400" x="720" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-30" edge="1" parent="1" source="gDkjoUpcuoELF5REZ2hQ-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="199.74" y="-160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-31" edge="1" parent="1" source="gDkjoUpcuoELF5REZ2hQ-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-32" edge="1" parent="1" source="gDkjoUpcuoELF5REZ2hQ-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-33" edge="1" parent="1" source="gDkjoUpcuoELF5REZ2hQ-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="80.00000000000023" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-34" edge="1" parent="1" source="gDkjoUpcuoELF5REZ2hQ-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-160" y="360.2592592592591" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#0050ef;sketch=1;fontColor=#ffffff;strokeColor=#001DBC;opacity=50;shadow=0;glass=0;" value="&lt;h1&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;other bot or bot childern&lt;/font&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="160" width="410" x="200" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-27" edge="1" parent="1" source="gDkjoUpcuoELF5REZ2hQ-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="gDkjoUpcuoELF5REZ2hQ-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-20" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=0;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="130" width="400" x="210" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-21" parent="gDkjoUpcuoELF5REZ2hQ-20" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="ربات ساخته شده محل اجرای ویژگی ها برای صاحب کسب و کار هست" vertex="1">
+          <mxGeometry height="30" width="400" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-22" parent="gDkjoUpcuoELF5REZ2hQ-20" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.bottomButton;rSize=5;fontColor=#000000;" value="در این ربات صاحب کسب و کار میتواند ویژگی های مورد نظر خود را انجام دهد" vertex="1">
+          <mxGeometry height="30" width="400" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-24" parent="gDkjoUpcuoELF5REZ2hQ-20" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="تمام ویژگی هایی که بعد از این ویژگی بات فرزند نمایش داده میشود قابلیت تیک فعال بودن و نبودن را دارد" vertex="1">
+          <mxGeometry height="40" width="400" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-26" parent="gDkjoUpcuoELF5REZ2hQ-20" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="قابلیت اضافه کردن ادمین و دادن دسترسی به ربات و کراد ان" vertex="1">
+          <mxGeometry height="30" width="400" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-25" parent="1" style="text;strokeColor=#DFDFDF;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.topButton;rSize=5;fontColor=#6C767D;" value="&lt;h1&gt;ویژگی های بات فرزند یا کسب و کار&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="60" width="400" x="210" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-35" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="80" as="sourcePoint" />
+            <mxPoint x="-160" y="80.26" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-36" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="-159.96" as="sourcePoint" />
+            <mxPoint x="-160" y="-159.70074074074088" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-37" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="640.04" as="sourcePoint" />
+            <mxPoint x="-160" y="640.3" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-38" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="880.04" as="sourcePoint" />
+            <mxPoint x="-160" y="880.2992592592591" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-39" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#d5e8d4;sketch=1;strokeColor=#82b366;opacity=50;shadow=0;glass=0;gradientColor=#97d077;" value="&lt;h1&gt;&lt;font style=&quot;font-size: 25px; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;personal bot&lt;/font&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="80" width="280" x="-440" y="-200" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-63" edge="1" parent="1" source="gDkjoUpcuoELF5REZ2hQ-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-480" y="80.04347826086973" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#dae8fc;sketch=1;strokeColor=#6c8ebf;opacity=50;shadow=0;glass=0;gradientColor=#7ea6e0;" value="&lt;h1&gt;&lt;span style=&quot;font-size: 25px;&quot;&gt;form builder&lt;/span&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="80" width="280" x="-440" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-75" edge="1" parent="1" source="gDkjoUpcuoELF5REZ2hQ-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-480" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#f8cecc;sketch=1;strokeColor=#b85450;opacity=50;shadow=0;glass=0;gradientColor=#ea6b66;" value="&lt;h1&gt;&lt;span style=&quot;font-size: 25px;&quot;&gt;shop bot&lt;/span&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="80" width="280" x="-440" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-88" edge="1" parent="1" source="gDkjoUpcuoELF5REZ2hQ-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-480" y="640.04347826087" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#d5e8d4;sketch=1;strokeColor=#82b366;opacity=50;shadow=0;glass=0;gradientColor=light-dark(#97D077,#238A15);" value="&lt;h1&gt;&lt;span style=&quot;font-size: 25px;&quot;&gt;chat bot&lt;/span&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="80" width="280" x="-440" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-96" edge="1" parent="1" source="gDkjoUpcuoELF5REZ2hQ-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-480" y="880.1034482758623" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-43" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#e6d0de;sketch=1;strokeColor=#996185;opacity=50;shadow=0;glass=0;gradientColor=#d5739d;" value="&lt;h1&gt;&lt;span style=&quot;font-size: 25px;&quot;&gt;agent bot&lt;/span&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="80" width="280" x="-440" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-44" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=0;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="430" width="400" x="-880" y="-430" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-45" parent="gDkjoUpcuoELF5REZ2hQ-44" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="قابلیت ساخت منو شخصی با تمام متن های دلخواه" vertex="1">
+          <mxGeometry height="30" width="400" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-46" parent="gDkjoUpcuoELF5REZ2hQ-44" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.bottomButton;rSize=5;fontColor=#000000;" value="قابلیت کراد برای منوی شخصی" vertex="1">
+          <mxGeometry height="30" width="400" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-47" parent="gDkjoUpcuoELF5REZ2hQ-44" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="فابلیت پیام های شخصی برای ارسال و کراد روی تمام پیام ها" vertex="1">
+          <mxGeometry height="30" width="400" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-48" parent="gDkjoUpcuoELF5REZ2hQ-44" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="قابلیت قرار دادن تعداد دکمه دلخواه برای پیام ها بعلاوه متن و عملکرد دلخواه هر دکمه" vertex="1">
+          <mxGeometry height="30" width="400" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-54" parent="gDkjoUpcuoELF5REZ2hQ-44" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="&lt;div&gt;قابلیت استفاده از دکمه های پیش ساخته و پایه&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="400" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-55" parent="gDkjoUpcuoELF5REZ2hQ-44" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="قابلیت کراد بر روی تمام دکمه ها" vertex="1">
+          <mxGeometry height="30" width="400" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-56" parent="gDkjoUpcuoELF5REZ2hQ-44" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="دکمه های پیش ساخته ( گرفتن شماره تماس و اطلاعات کاربر/ گذاشتن عضویت اجباری برای کانال ها / گرفتن کوری استرینگ برای کلیک بر روی یک لینک و نمایش اطلاعات دلخواه در ربات / خروجی گرفتن اکسل اطلاعات کاربران /  و... )" vertex="1">
+          <mxGeometry height="50" width="400" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-57" parent="gDkjoUpcuoELF5REZ2hQ-44" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="قابلیت مدیریت کانال و گروه با ربات" vertex="1">
+          <mxGeometry height="30" width="400" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-58" parent="gDkjoUpcuoELF5REZ2hQ-44" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="قابلیت ادمین کردن ربات و کامند دلخواه برای مدیریت ربات" vertex="1">
+          <mxGeometry height="30" width="400" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-59" parent="gDkjoUpcuoELF5REZ2hQ-44" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="قابلیت مدیریت چند اپلیکیشن و بات ان در یک ربات" vertex="1">
+          <mxGeometry height="30" width="400" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-60" parent="gDkjoUpcuoELF5REZ2hQ-44" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="قابلیت فروش فضای ذخیره سازی برای ارسال فیلم و عکس و صدا برای کاربر ها در صورت نیاز قابلیت شخصی سازی کامند استارت و کراد روی ان" vertex="1">
+          <mxGeometry height="40" width="400" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-61" parent="gDkjoUpcuoELF5REZ2hQ-44" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="قابلیت ارسال پیام به کاربران مورد نظر با پیام دلخواه یا ارسال پیام گروهی به افراد" vertex="1">
+          <mxGeometry height="30" width="400" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-62" parent="gDkjoUpcuoELF5REZ2hQ-44" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="کورن جاب برای ربات ها شخص میتواند یک زمان را مشخص کند تا در یک زمان در ربات اتفاق خاصی بی افتد یا هر چند وقت یک بار یک اتفاق خاصی بی افتد" vertex="1">
+          <mxGeometry height="40" width="400" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-50" parent="1" style="text;strokeColor=#DFDFDF;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.topButton;rSize=5;fontColor=#6C767D;" value="&lt;h1&gt;ویژگی های بات شخصی&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="60" width="400" x="-880" y="-490" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-53" edge="1" parent="1" source="gDkjoUpcuoELF5REZ2hQ-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-480" y="-160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-64" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=0;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="90" width="400" x="-880" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-65" parent="gDkjoUpcuoELF5REZ2hQ-64" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="قابلیت ساخت پرس لاین و عملیات کراد بر روی پرس لاین" vertex="1">
+          <mxGeometry height="30" width="400" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-66" parent="gDkjoUpcuoELF5REZ2hQ-64" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.bottomButton;rSize=5;fontColor=#000000;" value="قابلیت اجرای هر نوع سوالی در پرسلاین همین طور ارسال عکس ویدیو و صدا در پرس لاین" vertex="1">
+          <mxGeometry height="30" width="400" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-68" parent="gDkjoUpcuoELF5REZ2hQ-64" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="قابلیت خروجی گرفتن اکسل برای پرس لاین و دادن دیتا تحلیل شده در پاسخ های ثبت شده" vertex="1">
+          <mxGeometry height="30" width="400" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-69" parent="1" style="text;strokeColor=#DFDFDF;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.topButton;rSize=5;fontColor=#6C767D;" value="&lt;h1&gt;ویژگی های ربات فرم ساز&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="60" width="400" x="-880" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-70" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=0;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="200" width="400" x="-880" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-71" parent="gDkjoUpcuoELF5REZ2hQ-70" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="ایجاد سیستم فروشگاهی برای مدیریت پرداخت های کاربران" vertex="1">
+          <mxGeometry height="30" width="400" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-72" parent="gDkjoUpcuoELF5REZ2hQ-70" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.bottomButton;rSize=5;fontColor=#000000;" value="قابلیت عملیات کراد برای سیستم های فروشگاهی برای هر محصول و فروشگاه" vertex="1">
+          <mxGeometry height="30" width="400" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-73" parent="gDkjoUpcuoELF5REZ2hQ-70" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="ایجاد قابلیت گذاشتن کد تخفیف برای محصول و کراد ان" vertex="1">
+          <mxGeometry height="30" width="400" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-76" parent="gDkjoUpcuoELF5REZ2hQ-70" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="سیستم مدیریت کاربران خریداری کرده از ربات و همین طور مدیریت انها و ارسال رسید خرید و انواع کار های مربوط به فروشگاه با عملیات کراد" vertex="1">
+          <mxGeometry height="40" width="400" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-77" parent="gDkjoUpcuoELF5REZ2hQ-70" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="سیستم مدیریت وضعیت محصول در حال ارسال و ارسال اطلاعات محصول در حال ارسال به عنوان مثال تغییر وضعیت محصول در حال ارسال از بسته بندی به ارسال به پست" vertex="1">
+          <mxGeometry height="40" width="400" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-78" parent="gDkjoUpcuoELF5REZ2hQ-70" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="خروجی دادن اکسل به ادمین برای مدیریت فروشگاه به شکل کامل" vertex="1">
+          <mxGeometry height="30" width="400" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-74" parent="1" style="text;strokeColor=#DFDFDF;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.topButton;rSize=5;fontColor=#6C767D;" value="&lt;h1&gt;ویژگی های ربات فروشگاهی&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="60" width="400" x="-880" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-80" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=0;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="120" width="400" x="-880" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-81" parent="gDkjoUpcuoELF5REZ2hQ-80" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="سیستم چت و تیکتینگ برای مدیریت کاربران هر کسب و کاری به شکل" vertex="1">
+          <mxGeometry height="30" width="400" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-82" parent="gDkjoUpcuoELF5REZ2hQ-80" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.bottomButton;rSize=5;fontColor=#000000;" value="ساخت و مدیریت چت روم های مختلف و کراد هر چت روم برای کسب و کار نام چت روم" vertex="1">
+          <mxGeometry height="30" width="400" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-83" parent="gDkjoUpcuoELF5REZ2hQ-80" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="افرادی که میتوانند پیام دهند افرادی که میتوانند مدیریت کنن مدیریت ادمین های چت روم" vertex="1">
+          <mxGeometry height="30" width="400" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-86" parent="gDkjoUpcuoELF5REZ2hQ-80" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="قابلیت ارسال تصویر ویس و ویدیو در چت روم" vertex="1">
+          <mxGeometry height="30" width="400" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-87" parent="1" style="text;strokeColor=#DFDFDF;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.topButton;rSize=5;fontColor=#6C767D;" value="&lt;h1&gt;ویژگی های ربات فروشگاهی&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="60" width="400" x="-880" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-90" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=0;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="60" width="400" x="-880" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-93" parent="gDkjoUpcuoELF5REZ2hQ-90" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="ایجنت پاسخ گوی کسب و کار" vertex="1">
+          <mxGeometry height="30" width="400" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-94" parent="gDkjoUpcuoELF5REZ2hQ-90" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#000000;" value="هر کسب و کار دیتا های خود را میدهد و پاسخ گوهی انلاین برای کسب و کار خودش میگیرد" vertex="1">
+          <mxGeometry height="30" width="400" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-95" parent="1" style="text;strokeColor=#DFDFDF;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.topButton;rSize=5;fontColor=#6C767D;" value="&lt;h1&gt;ویژگی های ربات ایجنت پاسخگو&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="60" width="400" x="-880" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-97" parent="1" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;legacyAnchorPoints=0;rotation=90;size=0.5;" value="" vertex="1">
+          <mxGeometry height="400" width="30" x="395" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="gDkjoUpcuoELF5REZ2hQ-98" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=13;" value="برای هر ویژگی که به ربات های کسب و کار اضافه میشود باید دیاگرام کامل توسعه ان به شکل جدا کشیده شود&amp;nbsp;" vertex="1">
+          <mxGeometry height="30" width="400" x="210" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="j-Ye87-vP6SMDf9KKfTC-3" edge="1" parent="1" source="j-Ye87-vP6SMDf9KKfTC-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1447.904761904762" y="496" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="j-Ye87-vP6SMDf9KKfTC-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;opacity=50;shadow=0;glass=0;" value="&lt;h1&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;any application ...&lt;/font&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="156" width="332" x="1282" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="j-Ye87-vP6SMDf9KKfTC-6" edge="1" parent="1" source="j-Ye87-vP6SMDf9KKfTC-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="j-Ye87-vP6SMDf9KKfTC-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="j-Ye87-vP6SMDf9KKfTC-4" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.multi-document;whiteSpace=wrap;boundedLbl=1;" value="find application ..." vertex="1">
+          <mxGeometry height="60" width="268" x="1314" y="504" as="geometry" />
+        </mxCell>
+        <mxCell id="j-Ye87-vP6SMDf9KKfTC-5" parent="1" style="icon;html=1;image=img/clipart/Gear_128x128.png" value="create bot" vertex="1">
+          <mxGeometry height="60" width="60" x="1222" y="504" as="geometry" />
+        </mxCell>
+        <mxCell id="j-Ye87-vP6SMDf9KKfTC-7" parent="1" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;legacyAnchorPoints=0;rotation=90;" value="" vertex="1">
+          <mxGeometry height="896" width="40" x="1146" y="157" as="geometry" />
+        </mxCell>
+        <mxCell id="j-Ye87-vP6SMDf9KKfTC-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="این بخش کلا باید دیاگرام مخصوص خودش دوباره پیاده سازی شود و با ریز جزئیات و ابزاری که میخواییم برای پیاده سازیش استفاده کنیم" vertex="1">
+          <mxGeometry height="30" width="898" x="718" y="620" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
 </mxfile>
