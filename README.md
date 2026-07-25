@@ -32,12 +32,6 @@ https://app.notion.com/p/39c0b7b92edb807ea644e608b29a3ff9?v=39c0b7b92edb80a5a7a8
 
 ---
 
-## 💻 GitHub
-
-GitHub Profile:
-https://github.com/Ehsankhanahmadi
-
-
 # Project Development Guidelines
 
 ## ⚠️ Project Structure
