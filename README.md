@@ -72,14 +72,14 @@ All Docker configuration and maintenance are managed by the project owner. If an
 After pulling the latest changes from the repository, use the following command to build and run the project:
 
 ```text
-docker compose --env-file .\bot\.env up -d --build
+docker compose up -d --build
 ```
 
 This command will build the project (if necessary) and start all required containers.
 after build project you can use this command for start project.
 
 ```text
-docker compose --env-file .\bot\.env up -d
+docker compose up -d
 ```
 
 Thanks to the mounted Docker volumes, any changes you make to the source code will be reflected immediately. **There is no need to rebuild or restart the containers after every code change.** In most cases, simply refresh your browser or restart the client application to see the updates.
