@@ -14,7 +14,7 @@ services:
     ports:
       - "8000:8000"
     env_file:
-      - .env
+      - ./bot/.env
     depends_on:
       - postgres
       - rabbitmq
@@ -34,7 +34,7 @@ services:
     volumes:
       - ./Bot:/app/
     env_file:
-      - .env
+      - ./bot/.env
     depends_on:
       - postgres
       - rabbitmq
@@ -50,7 +50,7 @@ services:
     ports:
       - "5555:5555"
     env_file:
-      - .env
+      - ./bot/.env
     depends_on:
       - rabbitmq
       - celery
@@ -70,7 +70,7 @@ services:
     ports:
       - "5432:5432"
     env_file:
-      - .env
+      - ./bot/.env
     networks:
       - bot_platform
 
@@ -86,7 +86,7 @@ services:
     depends_on:
       - postgres
     env_file:
-      - .env
+      - ./bot/.env
     networks:
       - bot_platform
 
@@ -101,7 +101,7 @@ services:
     - "5672:5672"
     - "15672:15672"
     env_file:
-      - .env
+      - ./bot/.env
     networks:
       - bot_platform
 
