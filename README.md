@@ -85,16 +85,22 @@ docker compose up -d
 after give project please switch target branch and migrate database before start project
 
 ```text
+
 git switch branchname
+
 python manage.py migrate
+
 ```
 
 Thanks to the mounted Docker volumes, any changes you make to the source code will be reflected immediately. **There is no need to rebuild or restart the containers after every code change.** In most cases, simply refresh your browser or restart the client application to see the updates.
 Only files that belong to package or tool configurations are allowed to use **PascalCase** or **uppercase** naming conventions. For example:
 
 ```text
+
 Dockerfile
+
 README.md
+
 ```
 
 All other project files and directories must follow the project's naming conventions described above.
