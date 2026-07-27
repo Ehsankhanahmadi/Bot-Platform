@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'drf_spectacular',
     'django_celery_results',
+    # bot startapp
+    'core',
 ]
 
 MIDDLEWARE = [
