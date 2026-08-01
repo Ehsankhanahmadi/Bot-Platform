@@ -1,1 +1,0 @@
-manage all adapter in this folder
