@@ -40,7 +40,8 @@ The project structure **must** follow these rules:
 
 * before start coding please check **auto save** in vscode is acitve
 * All directories and folders **must** use **lowercase** names.
-* All classes and functions **must** follow the **PascalCase** naming convention.
+* All classes and functions **must** follow the **lowercase** naming convention.
+* All classes and functions can use this **_** between words.
 
 --- 
 
