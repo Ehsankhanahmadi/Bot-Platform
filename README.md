@@ -20,18 +20,6 @@ https://app.notion.com/p/39c0b7b92edb807ea644e608b29a3ff9?v=39c0b7b92edb80a5a7a8
 
 ---
 
-## 💬 Communication
-
-### Telegram
-
-> _Coming Soon_
-
-### Bale
-
-> _Coming Soon_
-
----
-
 # Project Development Guidelines
 
 # ⚠️ Project Structure
@@ -107,7 +95,6 @@ All other project files and directories must follow the project's naming convent
 # ⚠️ Adapters
 
 Each supported messaging platform is developed as an **independent adapter**. Every adapter is responsible only for communicating with its own platform and should not contain business logic that belongs to the project's core API.
-
 Current adapters:
 
 ```text
@@ -121,10 +108,9 @@ Each adapter has its own development process and internal structure.
 
 ---
 
-## Telegram Adapter
+## ⚙️ Telegram Adapter
 
 The Telegram adapter is developed using **Webhook mode**.
-
 The Telegram Mother Bot is located in:
 
 ```text
@@ -132,13 +118,6 @@ adapter/
 └── telegram/
     └── mother/
 ```
-
-The Mother Bot is responsible for:
-
-* Receiving new Bot Tokens from users.
-* Managing Telegram-specific operations.
-* Forwarding requests to the Core API.
-* Registering Telegram Webhooks.
 
 ---
 
@@ -176,10 +155,9 @@ uvicorn mother.app:app --reload
 
 ---
 
-## ⚠️ Adapter telegram Folder Structure
+### Adapter telegram Folder Structure
 
 adapter telegram must follow the same structure.
-
 Example:
 
 ```text
@@ -199,9 +177,7 @@ mother/
 ### handlers/
 
 The **handlers** directory is the most important part of every adapter.
-
 Handlers must be organized by **feature**, **not by update type**.
-
 Correct example:
 
 ```text
@@ -224,7 +200,6 @@ start/
 ```
 
 The Router for that feature should be created inside `router.py`.
-
 If the feature becomes larger, it may be divided into additional files, for example:
 
 ```text
@@ -238,39 +213,4 @@ bots/
 ```
 
 In this case, the Router should be created once and exposed through `__init__.py`, allowing the Dispatcher to include the entire feature with a single import.
-
 The Dispatcher should only include feature routers and should never contain business logic.
-
----
-
-### keyboards/
-
-All ReplyKeyboard and InlineKeyboard implementations must be placed inside the **keyboards** directory.
-
-Example:
-
-```text
-keyboards/
-│
-├── start.py
-├── panel.py
-├── bots.py
-└── settings.py
-```
-
-No keyboard creation logic should be placed inside handlers.
-
----
-
-### services/
-
-The **services** directory contains the business logic of the adapter.
-
-Handlers should only:
-
-* Receive updates.
-* Validate input.
-* Call the appropriate service.
-* Return a response.
-
-Heavy processing, external API calls, database operations, and business rules must be implemented inside the service layer.
