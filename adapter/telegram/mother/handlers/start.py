@@ -1,7 +1,7 @@
 from aiogram.filters import CommandStart
 from aiogram.types import Message
 from aiogram import Router
-from mother.button.start_button import keyboard
+from mother.button.start import keyboard
 
 router = Router()
 
