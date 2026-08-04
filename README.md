@@ -34,7 +34,7 @@ https://app.notion.com/p/39c0b7b92edb807ea644e608b29a3ff9?v=39c0b7b92edb80a5a7a8
 
 # Project Development Guidelines
 
-## ⚠️ Project Structure
+# ⚠️ Project Structure
 
 The project structure **must** follow these rules:
 
@@ -45,7 +45,7 @@ The project structure **must** follow these rules:
 
 --- 
 
-## ⚠️ Git Workflow
+# ⚠️ Git Workflow
 
 Please follow the Git workflow below throughout the development process:
 
@@ -65,7 +65,7 @@ feature/*  →  dev  →  main
 
 ---
 
-## ⚠️ Docker
+# ⚠️ Docker
 
 Please **do not modify** any Docker-related files or configurations.
 If you believe a Docker configuration needs to be changed, please leave a comment in the corresponding task assigned to you in **Notion**.
@@ -101,3 +101,176 @@ README.md
 ```
 
 All other project files and directories must follow the project's naming conventions described above.
+
+---
+
+# ⚠️ Adapters
+
+Each supported messaging platform is developed as an **independent adapter**. Every adapter is responsible only for communicating with its own platform and should not contain business logic that belongs to the project's core API.
+
+Current adapters:
+
+```text
+adapter/
+├── bale/
+├── rubika/
+└── telegram/
+```
+
+Each adapter has its own development process and internal structure.
+
+---
+
+## Telegram Adapter
+
+The Telegram adapter is developed using **Webhook mode**.
+
+The Telegram Mother Bot is located in:
+
+```text
+adapter/
+└── telegram/
+    └── mother/
+```
+
+The Mother Bot is responsible for:
+
+* Receiving new Bot Tokens from users.
+* Managing Telegram-specific operations.
+* Forwarding requests to the Core API.
+* Registering Telegram Webhooks.
+
+---
+
+### Local Development
+
+For local webhook development we use **ngrok**.
+
+#### 1. Authenticate ngrok
+
+```bash
+ngrok config add-authtoken YOUR_AUTH_TOKEN
+```
+
+#### 2. Start ngrok
+
+```bash
+ngrok http 8000
+```
+
+Copy the generated HTTPS URL and place it inside your `.env` file as:
+
+```text
+WEBHOOK_URL=https://xxxxxxxx.ngrok-free.app
+```
+
+---
+
+### Run the Telegram Mother Bot
+
+Start the FastAPI application using:
+
+```bash
+uvicorn mother.app:app --reload
+```
+
+---
+
+## ⚠️ Adapter telegram Folder Structure
+
+adapter telegram must follow the same structure.
+
+Example:
+
+```text
+mother/
+│
+├── app.py
+├── bot.py
+├── dispatcher.py
+├── webhook.py
+├── handlers/
+├── keyboards/
+├── services/
+```
+
+---
+
+### handlers/
+
+The **handlers** directory is the most important part of every adapter.
+
+Handlers must be organized by **feature**, **not by update type**.
+
+Correct example:
+
+```text
+handlers/
+│
+├── start/
+├── bots/
+├── panel/
+├── settings/
+└── subscription/
+```
+
+Every feature directory must contain:
+
+```text
+start/
+│
+├── __init__.py
+└── router.py
+```
+
+The Router for that feature should be created inside `router.py`.
+
+If the feature becomes larger, it may be divided into additional files, for example:
+
+```text
+bots/
+│
+├── __init__.py
+├── create.py
+├── delete.py
+├── edit.py
+└── statistics.py
+```
+
+In this case, the Router should be created once and exposed through `__init__.py`, allowing the Dispatcher to include the entire feature with a single import.
+
+The Dispatcher should only include feature routers and should never contain business logic.
+
+---
+
+### keyboards/
+
+All ReplyKeyboard and InlineKeyboard implementations must be placed inside the **keyboards** directory.
+
+Example:
+
+```text
+keyboards/
+│
+├── start.py
+├── panel.py
+├── bots.py
+└── settings.py
+```
+
+No keyboard creation logic should be placed inside handlers.
+
+---
+
+### services/
+
+The **services** directory contains the business logic of the adapter.
+
+Handlers should only:
+
+* Receive updates.
+* Validate input.
+* Call the appropriate service.
+* Return a response.
+
+Heavy processing, external API calls, database operations, and business rules must be implemented inside the service layer.
