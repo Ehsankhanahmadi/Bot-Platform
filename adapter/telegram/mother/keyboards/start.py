@@ -2,13 +2,12 @@ from aiogram.utils.keyboard import ReplyKeyboardBuilder
 
 builder = ReplyKeyboardBuilder()
 
-builder.button(text="ثبت نام")
-builder.button(text="ربات‌ها")
-builder.button(text="ساخت ربات")
-builder.button(text="تنظیمات")
+builder.button(text="ساخت بات")
+builder.button(text="تنظیمات بات")
+builder.button(text="راهنما")
 
-builder.adjust(2, 2)
+builder.adjust(2, 1)
 
-keyboard = builder.as_markup(
+keyboardstart = builder.as_markup(
     resize_keyboard=True
 )

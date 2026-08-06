@@ -1,1 +1,1 @@
-import start
+from . import start

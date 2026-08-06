@@ -1,6 +1,9 @@
 from aiogram import Dispatcher
 from mother.handlers.start import router as start_router
+from aiogram.fsm.storage.memory import MemoryStorage
 
-dp = Dispatcher()
+storage = MemoryStorage()
+
+dp = Dispatcher(storage=storage)
 
 dp.include_router(start_router)
