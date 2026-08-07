@@ -1,15 +1,20 @@
-from aiogram.utils.keyboard import ReplyKeyboardBuilder
+from aiogram.utils.keyboard import ReplyKeyboardMarkup, KeyboardButton
 
 
 
-builder = ReplyKeyboardBuilder()
+verify_keyboard = ReplyKeyboardMarkup(
+    keyboard=[
+        [KeyboardButton(text="📱 ارسال شماره موبایل",request_contact=True)],
+    ],
+    resize_keyboard=True,
+    one_time_keyboard=True
+)
 
-builder.button(text="⚙️ تنظیمات بات")
-builder.button(text="🤖 ساخت بات")
-builder.button(text="🆘 راهنما")
-
-builder.adjust(2, 1)
-
-keyboardstart = builder.as_markup(
-    resize_keyboard=True
+verified_keyboard = ReplyKeyboardMarkup(
+    keyboard=[
+        [KeyboardButton(text="⚙️ تنظیمات بات"),KeyboardButton(text="🤖 ساخت بات")],
+        [KeyboardButton(text="🆘 راهنما")],
+    ],
+    resize_keyboard=True,
+    one_time_keyboard=True
 )
