@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="Page-1" id="bUrXzMYR2_aOCwuaHYny">
-        <mxGraphModel dx="2338" dy="1762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+        <mxGraphModel dx="2338" dy="1760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -80,7 +80,7 @@
                     <mxGeometry x="-200" y="-230" width="280" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="6" value="" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=0;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
-                    <mxGeometry x="-200" y="-120" width="280" height="350" as="geometry"/>
+                    <mxGeometry x="-200" y="-120" width="280" height="230" as="geometry"/>
                 </mxCell>
                 <mxCell id="7" value="&lt;h2&gt;&lt;font style=&quot;font-size: 16px; color: light-dark(rgb(0, 0, 0), rgb(102, 102, 102));&quot;&gt;مواردی که ارسال میکند کاربر به ربات مادر در هر اپلیکیشنی ( فیلد مدل های دیتابیس )&lt;/font&gt;&lt;/h2&gt;" style="text;strokeColor=#DFDFDF;fillColor=#F7F7F7;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.topButton;rSize=5;fontColor=#333333;" parent="6" vertex="1">
                     <mxGeometry width="280" height="70" as="geometry"/>
@@ -149,7 +149,7 @@
                 <mxCell id="16" value="&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;اپلیکیشنی که که میخواد استفاده کنه ذخیره میشه ( تمام اداپتورها ساخته میشه براش&amp;nbsp; )&lt;/font&gt;" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#333333;" parent="6" vertex="1">
                     <mxGeometry y="160" width="280" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="34" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;sketch=1;curveFitting=1;jiggle=2;" parent="6" source="17" edge="1">
+                <mxCell id="38" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;sketch=1;curveFitting=1;jiggle=2;" parent="6" source="26" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="-360" y="-40" as="targetPoint"/>
                         <Array as="points">
@@ -157,85 +157,19 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="17" value="" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#333333;" parent="6" vertex="1">
-                    <mxGeometry y="200" width="280" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="35" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;sketch=1;curveFitting=1;jiggle=2;" parent="6" source="18" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-380" y="-40" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="-380" y="245"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="18" value="" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#333333;" parent="6" vertex="1">
-                    <mxGeometry y="230" width="280" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="36" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;sketch=1;curveFitting=1;jiggle=2;" parent="6" source="19" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-400" y="-40" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="-400" y="275"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="19" value="" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#333333;" parent="6" vertex="1">
-                    <mxGeometry y="260" width="280" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="37" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;sketch=1;curveFitting=1;jiggle=2;" parent="6" source="20" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-420" y="-40" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="-420" y="305"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="20" value="" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;rSize=5;fontColor=#333333;" parent="6" vertex="1">
-                    <mxGeometry y="290" width="280" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="38" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;sketch=1;curveFitting=1;jiggle=2;" parent="6" source="26" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-440" y="-40" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="-440" y="330"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
                 <mxCell id="42" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;sketch=1;curveFitting=1;jiggle=2;" parent="6" source="26" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="340" y="335.2222222222222" as="targetPoint"/>
+                        <mxPoint x="360" y="215" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="26" value="&lt;font style=&quot;color: light-dark(rgb(71, 71, 71), rgb(255, 255, 255));&quot;&gt;توکن اپلیکیشنی که کاربر میخواد درش ربات بسازه&lt;/font&gt;" style="text;strokeColor=#DFDFDF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;shape=mxgraph.bootstrap.bottomButton;rSize=5;fontColor=#333333;" parent="6" vertex="1">
-                    <mxGeometry y="320" width="280" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="27" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;" parent="1" vertex="1">
-                    <mxGeometry x="90" y="80" width="20" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="28" value="در این اپلیکیشنی که میخواد استفاده کنه&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="110" y="125" width="180" height="30" as="geometry"/>
+                    <mxGeometry y="200" width="280" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="41" value="&lt;h1&gt;&lt;font style=&quot;font-size: 26px;&quot; face=&quot;Helvetica&quot;&gt;bots url&amp;nbsp;&lt;/font&gt;&lt;/h1&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="-400" y="-880" width="130" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="43" value="&lt;h3&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;برای هر توکن میتواند ...&lt;/font&gt;&lt;/h3&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="140" y="184" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="54" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="44" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="350" y="140.0769230769231" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="56" style="edgeStyle=none;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" source="44" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="350" y="219.74193548387098" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="44" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;" parent="1" vertex="1">
-                    <mxGeometry x="290" y="140" width="20" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="45" value="میتواند موارد بالا با پایین برای هر توکن جدا باشد&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="300" y="165" width="220" height="30" as="geometry"/>
+                    <mxGeometry x="160" y="70" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="47" value="manytoone" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="160" y="44" width="80" height="30" as="geometry"/>
@@ -248,12 +182,6 @@
                 </mxCell>
                 <mxCell id="53" value="manytoone" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="160" y="-22" width="80" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="55" value="manytoone" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="350" y="125" width="80" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="57" value="manytoone" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="350" y="205" width="80" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
