@@ -2,7 +2,7 @@ from aiogram.filters import CommandStart
 from aiogram.types import Message
 from aiogram import Router
 
-from mother.keyboards.start import verify_keyboard
+from mother.keyboards import verify_keyboard
 
 
 

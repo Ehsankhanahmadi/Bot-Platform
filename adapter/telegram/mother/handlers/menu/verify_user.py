@@ -1,7 +1,7 @@
 from aiogram.types import Message
 from aiogram import F
 
-from mother.keyboards.start import verified_keyboard
+from mother.keyboards import verified_keyboard
 from mother.services import register_user
 
 from . import router
