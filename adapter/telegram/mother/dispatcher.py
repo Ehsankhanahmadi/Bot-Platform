@@ -4,7 +4,7 @@ from aiogram.fsm.storage.memory import MemoryStorage
 from mother.handlers.start import router as start_router
 from mother.handlers.menu import router as menu_router
 
-from mother.middlewares import RegisterUserMiddleware
+from mother.middlewares.register_user import RegisterUserMiddleware
 
 
 
