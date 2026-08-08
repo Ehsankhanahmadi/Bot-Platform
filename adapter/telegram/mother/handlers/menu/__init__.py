@@ -5,4 +5,4 @@ router = Router()
 from . import config_bots
 from . import create_bots
 from . import help
-from . import verify
+from . import verify_user

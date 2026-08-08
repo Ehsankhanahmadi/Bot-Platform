@@ -1,1 +1,1 @@
-from .user import register_user
+from .user import verify_user
