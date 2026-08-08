@@ -15,4 +15,4 @@ database = [
 ]
 
 from .verify import verify_user
-from .getone import get_one_user
+from .get import get_one_user
