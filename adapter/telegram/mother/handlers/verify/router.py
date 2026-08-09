@@ -1,10 +1,10 @@
 from aiogram.types import Message
-from aiogram import F
+from aiogram import Router, F
 
-from mother.keyboards import verified_keyboard, verify_keyboard
+from mother.keyboards import verified_keyboard
 from mother.services import verify_user
 
-from . import router
+router = Router()
 
 
 
