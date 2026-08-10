@@ -13,4 +13,4 @@ async def handler_create_bots(message:Message):
 
 @router.callback_query(F.data == "read_help")
 async def handler_read_help(callback:CallbackQuery):
-    await callback.message.answer("شما روی دکمه مطالعه کردم کلیک کردید")
+    await callback.message.answer("توکن را ارسال نمایید مثال : \n816541649677:AA4sd5f5s7ewx0d9Me-44se7f8s6aoRa8IKNDSYE")
