@@ -14,7 +14,7 @@ async def process_update(data: dict):
 
 async def set_webhook():
     await bot.delete_webhook(drop_pending_updates=True)
-    await bot.set_webhook(url=f"{WEBHOOK_URL}/telegram/webhook")
+    await bot.set_webhook(url=f"{WEBHOOK_URL}/telegram/webhook",allowed_updates=["message","callback_query",])
     print("Webhook Registered ✅")
 
 async def shutdown():

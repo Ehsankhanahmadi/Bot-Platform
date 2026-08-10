@@ -1,1 +1,1 @@
-from .router import router
+from .router import router as fallback_router

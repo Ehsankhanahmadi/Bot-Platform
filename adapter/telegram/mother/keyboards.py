@@ -1,10 +1,10 @@
-from aiogram.utils.keyboard import ReplyKeyboardMarkup, KeyboardButton
+from aiogram.utils.keyboard import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 
 
 
 verify_keyboard = ReplyKeyboardMarkup(
     keyboard=[
-        [KeyboardButton(text="📱 ارسال شماره موبایل",request_contact=True)],
+        [KeyboardButton(text="📱 احراز هویت",request_contact=True)],
     ],
     resize_keyboard=True,
     one_time_keyboard=True
@@ -17,4 +17,10 @@ verified_keyboard = ReplyKeyboardMarkup(
     ],
     resize_keyboard=True,
     one_time_keyboard=True
+)
+
+read_help_keyboard = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [InlineKeyboardButton(text="راهنما را مطالعه کردم", callback_data="read_help")],
+    ],
 )

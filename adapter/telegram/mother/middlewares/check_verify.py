@@ -1,5 +1,5 @@
 from aiogram import BaseMiddleware
-from aiogram.types import TelegramObject, Message
+from aiogram.types import TelegramObject, Message, CallbackQuery
 
 from ..services.user import get_one_user
 from ..keyboards import verify_keyboard
@@ -13,9 +13,9 @@ class CheckVerifyUserMiddleware(BaseMiddleware):
             return await handler(event, data)
 
         user_main = await get_one_user(user)
-
+        
         if user_main != "verified":
-            if isinstance(event, Message):
+            if isinstance(event, (Message, CallbackQuery)):
                 await event.answer("🌚", reply_markup=verify_keyboard)
             return
 

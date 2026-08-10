@@ -1,10 +1,7 @@
 from aiogram import Dispatcher
 from aiogram.fsm.storage.memory import MemoryStorage
 
-from mother.handlers.start import router as start_router
-from mother.handlers.verify import router as verify_router
-from mother.handlers.protected import router as protected_router
-from mother.handlers.fallback import router as fallback_router
+from mother.handlers import protected_router, start_router, verify_router, fallback_router
 
 
 
