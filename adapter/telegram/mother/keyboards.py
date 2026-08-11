@@ -21,6 +21,6 @@ verified_keyboard = ReplyKeyboardMarkup(
 
 read_help_keyboard = InlineKeyboardMarkup(
     inline_keyboard=[
-        [InlineKeyboardButton(text="راهنما را مطالعه کردم", callback_data="read_help")],
+        [InlineKeyboardButton(text="راهنما را مطالعه کردم", callback_data="read_help", style="success")],
     ],
 )

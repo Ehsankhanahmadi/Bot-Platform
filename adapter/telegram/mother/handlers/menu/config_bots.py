@@ -1,10 +1,11 @@
 from aiogram.types import Message
+from aiogram.filters import StateFilter
 from aiogram import F
 
 from . import router
 
 
 
-@router.message(F.text == "⚙️ تنظیمات بات")
+@router.message(StateFilter(None),F.text == "⚙️ تنظیمات بات")
 async def handler_config_bots(message:Message):
     await message.answer("شما روی دکمه تنظیمات بات کلیک کردید")

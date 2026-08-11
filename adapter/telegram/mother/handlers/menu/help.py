@@ -1,11 +1,12 @@
 from aiogram.types import Message
+from aiogram.filters import StateFilter
 from aiogram import F
 
 from . import router
 
 
 
-@router.message(F.text == "🆘 راهنما")
+@router.message(StateFilter(None),F.text == "🆘 راهنما")
 async def handler_help(message:Message):
     await message.answer("""
 قبل از ساخت ربات بهتر است با روند صحیح ساخت ربات آشنا شوید.
