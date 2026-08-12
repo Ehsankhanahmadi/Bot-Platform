@@ -1,4 +1,5 @@
 from aiogram.types import Message
+from aiogram.filters import StateFilter
 from aiogram import Router, F
 
 from mother.keyboards import verified_keyboard
@@ -8,7 +9,7 @@ router = Router()
 
 
 
-@router.message(F.contact)
+@router.message(StateFilter(None),F.contact)
 async def handler_verify_user(message: Message):
     if message.contact.user_id == message.from_user.id:
         checking_message = await message.answer("در حال بررسی ...")

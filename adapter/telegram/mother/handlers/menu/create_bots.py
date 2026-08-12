@@ -17,7 +17,7 @@ async def handler_create_bots(message:Message):
 
 @router.callback_query(StateFilter(None),F.data == "read_help")
 async def handler_read_help(callback:CallbackQuery, state:FSMContext):
-    await callback.message.answer("توکن را ارسال نمایید مثال : \n\n8165416477:AA4sd5f5dfs7ex0d9Me-44se7f8sdf6R8IKNDSYE")
+    await callback.message.edit_text("توکن را ارسال نمایید مثال : \n\n8165416477:AA4sd5f5dfs7ex0d9Me-44se7f8sdf6R8IKNDSYE")
     await state.set_state(UserState.waiting_for_token)
 
 @router.message(UserState.waiting_for_token)

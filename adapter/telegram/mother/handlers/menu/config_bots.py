@@ -1,6 +1,9 @@
-from aiogram.types import Message
+from aiogram.types import Message, CallbackQuery
 from aiogram.filters import StateFilter
 from aiogram import F
+
+from mother.services import get_all_bot, get_all_active_bot, get_all_inactive_bot
+from mother.keyboards import config_keyboard, create_bot_keyboard
 
 from . import router
 
@@ -8,4 +11,30 @@ from . import router
 
 @router.message(StateFilter(None),F.text == "⚙️ تنظیمات بات")
 async def handler_config_bots(message:Message):
-    await message.answer("شما روی دکمه تنظیمات بات کلیک کردید")
+    all_bot = await get_all_bot(message.from_user.id)
+    if all_bot:
+        await message.answer("در این بخش میتوانید ربات های خود را مدیریت کنید", reply_markup=config_keyboard)
+    else:
+        await message.answer("شما در حال حاضر هیچ رباتی ندارید")
+
+@router.callback_query(StateFilter(None),F.data == "active")
+async def handler_active_bot(callback: CallbackQuery):
+    all_active_bot = await get_all_active_bot(callback.from_user.id)
+    new_keyboards = create_bot_keyboard(all_active_bot)
+    if all_active_bot:
+        await callback.message.edit_text("لیست ربات های فعال شما : ", reply_markup=new_keyboards)
+    else:
+        await callback.message.edit_text("شما در حال حاضر هیچ ربات فعالی ندارید", reply_markup=new_keyboards)
+
+@router.callback_query(StateFilter(None),F.data == "inactive")
+async def handler_inactive_bot(callback: CallbackQuery):
+    all_inactive_bot = await get_all_inactive_bot(callback.from_user.id)
+    new_keyboards = create_bot_keyboard(all_inactive_bot)
+    if all_inactive_bot:
+        await callback.message.edit_text("لیست ربات های غیر فعال شما : ", reply_markup=new_keyboards)
+    else:
+        await callback.message.edit_text("شما در حال حاضر هیچ ربات غیر فعالی ندارید", reply_markup=new_keyboards)
+
+@router.callback_query(StateFilter(None),F.data == "config_bot")
+async def handler_callback_keyboard(callback:CallbackQuery):
+    await callback.message.edit_text("در این بخش میتوانید ربات های خود را مدیریت کنید", reply_markup=config_keyboard)

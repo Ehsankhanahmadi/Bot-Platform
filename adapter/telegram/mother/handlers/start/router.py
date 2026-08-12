@@ -1,4 +1,4 @@
-from aiogram.filters import CommandStart
+from aiogram.filters import CommandStart, StateFilter
 from aiogram.types import Message
 from aiogram import Router
 
@@ -9,7 +9,7 @@ from mother.services import get_one_user
 
 router = Router()
 
-@router.message(CommandStart())
+@router.message(StateFilter(None),CommandStart())
 async def handler_start(message: Message):
     user = await get_one_user(message.from_user)
     if user != "verified":
