@@ -15,7 +15,8 @@ async def handler_verify_user(message: Message):
         checking_message = await message.answer("در حال بررسی ...")
         user = await verify_user(message.from_user, message.contact.phone_number)
         if user != "verified":
-            await checking_message.edit_text("✅ احراز هویت شما با موفقیت انجام شد", reply_markup=verified_keyboard)
+            await checking_message.delete()
+            await message.answer("✅ احراز هویت شما با موفقیت انجام شد", reply_markup=verified_keyboard)
         else:
             await message.answer("لطفا از منو های ربات استفاده کنید این پیام قابل برسی نمی باشد 🧐", reply_markup=verified_keyboard)
     else:

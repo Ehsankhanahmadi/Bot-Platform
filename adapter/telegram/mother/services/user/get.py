@@ -7,6 +7,5 @@ async def get_one_user(user):
         if i["telegram_id"] == user.id:
             print("user already exists")
             return "verified"
-        else:
-            print("user not found")
-            return "not verified"
+    print("user not found")
+    return "not verified"

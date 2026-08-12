@@ -10,11 +10,11 @@ async def verify_user(user,phone):
         "adapter_name": ADAPTER_NAME,
         "phone_number": phone,
     }
-    if user_data in database:
-        print("user already exists")
-        return "verified"
-    else:
-        database.append(user_data)
-        print(user_data)
-        print(database)
-        return "user added"
+    for i in database:
+        if i["telegram_id"] == user.id:
+            print("user already exists")
+            return "verified"
+    database.append(user_data)
+    print(user_data)
+    print(database)
+    return "user added"
