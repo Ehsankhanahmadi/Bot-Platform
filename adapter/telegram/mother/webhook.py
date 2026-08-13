@@ -4,9 +4,9 @@ from aiogram.types import Update
 from mother.bot import bot
 from mother.dispatcher import dp
 
-
-
 WEBHOOK_URL = os.getenv("WEBHOOK_URL")
+
+
 
 async def process_update(data: dict):
     update = Update.model_validate(data,context={"bot": bot})

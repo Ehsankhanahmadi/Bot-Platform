@@ -1,0 +1,29 @@
+services:
+  fastapi:
+    container_name: telegram_fastapi
+    build:
+      context: ./telegram
+      dockerfile: Dockerfile
+    command: uvicorn mother.app:app --host 0.0.0.0 --port 8000 --reload
+    volumes:
+      - ./telegram:/app
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./telegram/.env
+    depends_on:
+      - redis
+    networks:
+      - adapter_telegram
+  
+  redis:
+    image: redis:7-alpine
+    container_name: redis
+    restart: unless-stopped
+    volumes:
+      - ./telegram:/data
+    networks:
+      - adapter_telegram
+
+networks:
+  adapter_telegram:
