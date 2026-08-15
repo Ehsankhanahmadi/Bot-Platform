@@ -35,7 +35,7 @@ class CheckVerifyUserMiddleware(BaseMiddleware):
             count = await self.redis.incr(spam_key)
             if count == 1:
                 await self.redis.expire(spam_key, 86400)
-            if count > 15:
+            if count > 25:
                 await self.redis.set(ban_key,"1",ex=86400)
                 if isinstance(event, Message):
                     await event.answer("🚫 شما به دلیل رعایت نکردن قوانین تا 24 ساعت آینده بن شدید.")

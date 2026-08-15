@@ -2,18 +2,19 @@ from . import database
 
 
 
-async def create_bot(bot_username,token,userid):
-    bot = {
+async def create_bot(botmain,token,userid):
+    bot_new = {
         "token": f'{token}',
-        "bot_username": f'@{bot_username}',
+        "bot_username": f'@{botmain.username}',
+        "bot_id": botmain.id,
         "user_id": userid,
         "active": True
     }
     for bot in database:
-        if bot['bot_username'] == bot_username:
+        if bot['bot_id'] == botmain.id:
             print("bot already exists")
             return False
-    database.append(bot)
-    print(bot)
+    database.append(bot_new)
+    print(bot_new)
     print(database)
     return True

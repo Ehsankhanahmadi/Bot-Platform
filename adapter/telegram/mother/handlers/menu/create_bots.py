@@ -27,7 +27,7 @@ async def handler_give_token(message:Message, state:FSMContext):
     try:
         bot = Bot(token=token)
         bot_info = await bot.get_me()
-        bot_status = await create_bot(bot_info.username,token,message.from_user.id)
+        bot_status = await create_bot(bot_info,token,message.from_user.id)
         if bot_status:
             await checking_message.edit_text(f"اطلاعات ربات شما ثبت شد :\n\ntoken : \n{token}\n\nusername : \n@{bot_info.username}")
         else:

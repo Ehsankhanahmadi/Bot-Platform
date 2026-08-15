@@ -22,3 +22,8 @@ async def get_all_inactive_bot(userid):
         for bot in database
         if bot["user_id"] == userid and bot["active"] is False
     ]
+
+async def get_bot_by_id(botid):
+    for bot in database:
+        if bot["bot_id"] == botid:
+            return bot
