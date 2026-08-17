@@ -13,15 +13,17 @@ from . import router
 
 @router.message(StateFilter(None),F.text == "⚙️ تنظیمات بات")
 async def handler_config_bots(message:Message):
+    checking_message = await message.answer("در حال بررسی ...")
     all_bot = await get_all_bot(message.from_user.id)
     if all_bot:
-        await message.answer("در این بخش میتوانید ربات های خود را مدیریت کنید", reply_markup=config_keyboard)
+        await checking_message.edit_text("در این بخش میتوانید ربات های خود را مدیریت کنید", reply_markup=config_keyboard)
     else:
-        await message.answer("شما در حال حاضر هیچ رباتی ندارید")
+        await checking_message.edit_text("شما در حال حاضر هیچ رباتی ندارید")
 
 
 @router.callback_query(StateFilter(None),F.data == "active")
 async def handler_active_bot(callback: CallbackQuery):
+    await callback.message.edit_text("در حال بررسی ...")
     all_active_bot = await get_all_active_bot(callback.from_user.id)
     new_keyboards = create_bot_keyboard(all_active_bot)
     if all_active_bot:
@@ -32,6 +34,7 @@ async def handler_active_bot(callback: CallbackQuery):
 
 @router.callback_query(StateFilter(None),F.data == "inactive")
 async def handler_inactive_bot(callback: CallbackQuery):
+    await callback.message.edit_text("در حال بررسی ...")
     all_inactive_bot = await get_all_inactive_bot(callback.from_user.id)
     new_keyboards = create_bot_keyboard(all_inactive_bot)
     if all_inactive_bot:
@@ -42,6 +45,7 @@ async def handler_inactive_bot(callback: CallbackQuery):
 
 @router.callback_query(StateFilter(None),F.data.startswith("bot:"))
 async def handler_detail_bot(callback: CallbackQuery):
+    await callback.message.edit_text("در حال بررسی ...")
     bot_id = int(callback.data.split(":")[1])
     bot = await get_bot_by_id(bot_id)
     new_keyboard = create_detail_bot_keyboard(bot)
@@ -53,6 +57,7 @@ async def handler_detail_bot(callback: CallbackQuery):
 
 @router.callback_query(StateFilter(None),F.data.startswith("delete_bot"))
 async def handler_delete_bot(callback: CallbackQuery):
+    await callback.message.edit_text("در حال بررسی ...")
     bot_id = int(callback.data.split(":")[1])
     bot = await get_bot_by_id(bot_id)
     new_keyboard = create_delete_bot_keyboard(bot)
@@ -64,6 +69,7 @@ async def handler_delete_bot(callback: CallbackQuery):
 
 @router.callback_query(StateFilter(None),F.data.startswith("main_delete_bot"))
 async def handler_main_delete_bot(callback: CallbackQuery):
+    await callback.message.edit_text("در حال بررسی ...")
     bot_id = int(callback.data.split(":")[1])
     bot_status = await delete_bot_by_id(bot_id)
     new_keyboard = create_custom_back_keyboard(None)
@@ -107,6 +113,7 @@ async def handler_main_change_token_bot(message:Message, state:FSMContext):
 
 @router.callback_query(StateFilter(None),F.data.startswith("deactivate_bot"))
 async def handler_deactivate_bot(callback: CallbackQuery):
+    await callback.message.edit_text("در حال بررسی ...")
     bot_id = int(callback.data.split(":")[1])
     status = await status_change_bot(bot_id, False)
     new_keyboard = create_custom_back_keyboard(f"bot:{bot_id}")
@@ -128,6 +135,7 @@ async def handler_delete_bot(callback: CallbackQuery):
 
 @router.callback_query(StateFilter(None),F.data.startswith("activate_bot"))
 async def handler_activate_bot(callback: CallbackQuery):
+    await callback.message.edit_text("در حال بررسی ...")
     bot_id = int(callback.data.split(":")[1])
     status = await status_change_bot(bot_id, True)
     new_keyboard = create_custom_back_keyboard(f"bot:{bot_id}")
