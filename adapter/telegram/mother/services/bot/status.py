@@ -2,7 +2,7 @@ from . import get_bot_by_id, database
 
 
 
-async def status_change(botid, status):
+async def status_change_bot(botid, status):
     bot = await get_bot_by_id(botid)
     if bot:
         if bot in database:

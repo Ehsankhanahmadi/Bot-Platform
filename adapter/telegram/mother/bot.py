@@ -5,5 +5,6 @@ from aiogram import Bot
 
 
 load_dotenv()
+
 TOKEN = os.getenv("BOT_TOKEN")
 bot = Bot(token=TOKEN)

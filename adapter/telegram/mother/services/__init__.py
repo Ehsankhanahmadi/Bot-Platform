@@ -1,2 +1,2 @@
 from .user import verify_user, get_one_user
-from .bot import create_bot, get_all_bot, get_all_active_bot, get_all_inactive_bot, get_bot_by_id, delete_bot_by_id, update_bot, status_change
+from .bot import create_bot, get_all_bot, get_all_active_bot, get_all_inactive_bot, get_bot_by_id, delete_bot_by_id, update_bot, status_change_bot

@@ -10,6 +10,7 @@ verify_keyboard = ReplyKeyboardMarkup(
     one_time_keyboard=True
 )
 
+
 verified_keyboard = ReplyKeyboardMarkup(
     keyboard=[
         [KeyboardButton(text="⚙️ تنظیمات بات"),KeyboardButton(text="🤖 ساخت بات")],
@@ -19,11 +20,13 @@ verified_keyboard = ReplyKeyboardMarkup(
     one_time_keyboard=True
 )
 
+
 read_help_keyboard = InlineKeyboardMarkup(
     inline_keyboard=[
         [InlineKeyboardButton(text="راهنما را مطالعه کردم", callback_data="read_help", style="success")],
     ],
 )
+
 
 config_keyboard = InlineKeyboardMarkup(
     inline_keyboard=[
@@ -32,7 +35,8 @@ config_keyboard = InlineKeyboardMarkup(
     ]
 )
 
-def create_custom_back(callback:str|None):
+
+def create_custom_back_keyboard(callback:str|None):
     builder = InlineKeyboardBuilder()
     if callback:
         builder.button(text="🔙 بازگشت به منو قبل", callback_data=f"{callback}")
@@ -40,6 +44,7 @@ def create_custom_back(callback:str|None):
         builder.button(text="🔙 بازگشت به منو قبل", callback_data="config_bot")
     builder.adjust(1)
     return builder.as_markup()
+
 
 def create_bot_keyboard(bots:None):
     builder = InlineKeyboardBuilder()
@@ -51,6 +56,7 @@ def create_bot_keyboard(bots:None):
         builder.button(text="🔙 بازگشت به منو قبل", callback_data="config_bot")
     builder.adjust(1)
     return builder.as_markup()
+
 
 def create_detail_bot_keyboard(bot:None):
     builder = InlineKeyboardBuilder()
@@ -70,6 +76,7 @@ def create_detail_bot_keyboard(bot:None):
         builder.button(text="🔙 بازگشت به منو قبل",callback_data="inactive")
     builder.adjust(1)
     return builder.as_markup()
+
 
 def create_delete_bot_keyboard(bot:None):
     builder = InlineKeyboardBuilder()

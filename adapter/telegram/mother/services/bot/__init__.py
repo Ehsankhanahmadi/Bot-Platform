@@ -15,8 +15,5 @@ database = [
     }
 ]
 
-from .create import create_bot
-from .get import get_all_bot, get_all_active_bot, get_all_inactive_bot, get_bot_by_id
-from .delete import delete_bot_by_id
-from .update import update_bot
-from .status import status_change
+from .crud import create_bot, get_all_bot, get_all_active_bot, get_all_inactive_bot, get_bot_by_id, update_bot, delete_bot_by_id 
+from .status import status_change_bot

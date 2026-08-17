@@ -15,6 +15,7 @@ app = FastAPI(
     lifespan=lifespan
 )
 
+
 @app.post("/telegram/webhook")
 async def telegram_webhook(request: Request):
     data = await request.json()
