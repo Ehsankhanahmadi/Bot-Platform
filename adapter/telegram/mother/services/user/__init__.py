@@ -7,7 +7,7 @@ load_dotenv()
 
 database = [
     {
-        "telegram_id": 6073627,
+        "telegram_id": 6247073627,
         "user_name": "Ehsan_web884",
         "is_bot": False,
         "adapter_name": ADAPTER_NAME,

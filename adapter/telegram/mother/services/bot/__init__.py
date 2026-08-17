@@ -7,7 +7,7 @@ database = [
         "active": True
     },
     {
-        "token":'8620932466:AAESkLwQlHaXTp1q8RzrmtJ9gwProc4H4OI',
+        "token":'8620932466:AAHpUgtbBICRBsp_dYsRDWGMyBCHK8Fb_mE',
         "bot_username": "@sdgfsddgr_bot",
         "bot_id": 8620932466,
         "user_id": 6247073627,
@@ -17,3 +17,6 @@ database = [
 
 from .create import create_bot
 from .get import get_all_bot, get_all_active_bot, get_all_inactive_bot, get_bot_by_id
+from .delete import delete_bot_by_id
+from .update import update_bot
+from .status import status_change

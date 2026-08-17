@@ -32,6 +32,15 @@ config_keyboard = InlineKeyboardMarkup(
     ]
 )
 
+def create_custom_back(callback:str|None):
+    builder = InlineKeyboardBuilder()
+    if callback:
+        builder.button(text="🔙 بازگشت به منو قبل", callback_data=f"{callback}")
+    else:
+        builder.button(text="🔙 بازگشت به منو قبل", callback_data="config_bot")
+    builder.adjust(1)
+    return builder.as_markup()
+
 def create_bot_keyboard(bots:None):
     builder = InlineKeyboardBuilder()
     if bots:
@@ -48,14 +57,26 @@ def create_detail_bot_keyboard(bot:None):
     if not bot:
         return builder.as_markup()
     if bot["active"]:
+        builder.button(text="💀 حذف بات",callback_data=f"delete_bot:{bot['bot_id']}")
         builder.button(text="🔑 تغییر توکن بات",callback_data=f"change_token:{bot['bot_id']}")
         builder.button(text="🔴 غیرفعال کردن بات",callback_data=f"deactivate_bot:{bot['bot_id']}")
+        builder.button(text="🔵 حالت توسعه بات",callback_data=f"development_bot:{bot['bot_id']}")
         builder.button(text="💳 تمدید بات",callback_data=f"renew_bot:{bot['bot_id']}")
         builder.button(text="🔙 بازگشت به منو قبل",callback_data="active")
     else:
+        builder.button(text="💀 حذف بات",callback_data=f"delete_bot:{bot['bot_id']}")
         builder.button(text="🟢 فعال کردن بات",callback_data=f"activate_bot:{bot['bot_id']}")
         builder.button(text="💳 تمدید بات",callback_data=f"renew_bot:{bot['bot_id']}")
         builder.button(text="🔙 بازگشت به منو قبل",callback_data="inactive")
     builder.adjust(1)
     return builder.as_markup()
-        
+
+def create_delete_bot_keyboard(bot:None):
+    builder = InlineKeyboardBuilder()
+    if bot:
+        builder.button(text="💀 حذف ربات",callback_data=f"main_delete_bot:{bot["bot_id"]}")
+        builder.button(text="🔙 بازگشت به منو قبل",callback_data=f"bot:{bot["bot_id"]}")
+    else:
+        builder.button(text="🔙 بازگشت به منو قبل",callback_data=f"bot:{bot["bot_id"]}")
+    builder.adjust(1)
+    return builder.as_markup()
