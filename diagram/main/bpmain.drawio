@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="Page-1" id="nOwWm7EmSlVC-5TWRoDb">
-        <mxGraphModel dx="2537" dy="1538" grid="1" gridSize="2" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+        <mxGraphModel dx="2219" dy="1353" grid="1" gridSize="2" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -66,7 +66,7 @@
                         <mxPoint x="-160" y="360.2592592592591" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="2" style="edgeStyle=none;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="gDkjoUpcuoELF5REZ2hQ-19">
+                <mxCell id="2" style="edgeStyle=none;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" parent="1" source="gDkjoUpcuoELF5REZ2hQ-19" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="508" y="958" as="targetPoint"/>
                     </mxGeometry>
@@ -302,8 +302,22 @@
                 <mxCell id="j-Ye87-vP6SMDf9KKfTC-8" value="این بخش کلا باید دیاگرام مخصوص خودش دوباره پیاده سازی شود و با ریز جزئیات و ابزاری که میخواییم برای پیاده سازیش استفاده کنیم" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="718" y="620" width="898" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="&lt;h1&gt;&lt;font style=&quot;color: light-dark(rgb(255, 255, 255), rgb(255, 255, 255)); font-size: 15px;&quot;&gt;هزینه برای هر بخش به شکل جدا حساب میشود و هر ویژگی جداگانه فروشی است و اینکه پلن پایه معمولی و حرفه ای هم به فروش میرسد برای هر پلن چند ویژگی وجود دارد&amp;nbsp;&lt;/font&gt;&lt;/h1&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;opacity=50;shadow=0;glass=0;" vertex="1" parent="1">
+                <mxCell id="9" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="3" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;h1&gt;&lt;font style=&quot;color: light-dark(rgb(255, 255, 255), rgb(255, 255, 255)); font-size: 15px;&quot;&gt;هزینه برای هر بخش به شکل جدا حساب میشود و هر ویژگی جداگانه فروشی است و اینکه پلن پایه معمولی و حرفه ای هم به فروش میرسد برای هر پلن چند ویژگی وجود دارد&amp;nbsp;&lt;/font&gt;&lt;/h1&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;opacity=50;shadow=0;glass=0;" parent="1" vertex="1">
                     <mxGeometry x="200" y="964" width="616" height="66" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="8">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1235.5714285714284" y="686" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="اما هزینه در ربات مادر پرداخت میشود&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=1;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;opacity=50;shadow=0;glass=0;" vertex="1" parent="1">
+                    <mxGeometry x="1144" y="967" width="182" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="shape=mxgraph.mockup.markup.redX;fillColor=#ff0000;html=1;shadow=0;whiteSpace=wrap;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="-1118" y="532" width="188" height="180" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
