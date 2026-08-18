@@ -2,7 +2,7 @@ from aiogram.types import Message
 from aiogram.filters import StateFilter
 from aiogram import Router, F
 
-from mother.redis import redis
+from telegram.redis.redis import redis
 
 from mother.keyboards import verified_keyboard
 from mother.services import verify_user
