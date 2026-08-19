@@ -18,10 +18,10 @@ services:
   
   redis:
     image: redis:7-alpine
-    container_name: redis
+    container_name: telegram_redis
     restart: unless-stopped
     volumes:
-      - ./telegram:/data
+      - redis_data:/data
     networks:
       - adapter_telegram
 

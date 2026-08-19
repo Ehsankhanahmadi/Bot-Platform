@@ -4,16 +4,14 @@ from fastapi import FastAPI,Request
 from mother.webhook import process_update,set_webhook,shutdown
 
 
-
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     await set_webhook()
     yield
     await shutdown()
 
-app = FastAPI(
-    lifespan=lifespan
-)
+app = FastAPI(lifespan=lifespan)
+
 
 
 @app.post("/telegram/webhook")
