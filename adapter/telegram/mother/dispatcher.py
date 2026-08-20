@@ -1,9 +1,9 @@
 from aiogram import Dispatcher
 from aiogram.fsm.storage.redis import RedisStorage
 
-from telegram.redis.redis import redis
+from cache.redis import redis
 
-from mother.handlers import protected_router, verify_router, fallback_router
+from .handlers import protected_router, verify_router, fallback_router
 
 
 

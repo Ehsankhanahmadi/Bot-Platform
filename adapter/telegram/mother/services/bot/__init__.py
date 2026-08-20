@@ -11,7 +11,7 @@ database = [
         "bot_username": "@sdgfsddgr_bot",
         "bot_id": 8620932466,
         "user_id": 6247073627,
-        "active": False
+        "active": True
     }
 ]
 

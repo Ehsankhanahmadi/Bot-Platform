@@ -1,7 +1,7 @@
 from aiogram import Dispatcher
 from aiogram.fsm.storage.redis import RedisStorage, DefaultKeyBuilder
 
-from telegram.redis.redis import redis
+from cache.redis import redis
 from .handler_loader import load_handlers
 
 

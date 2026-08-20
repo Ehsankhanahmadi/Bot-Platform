@@ -1,6 +1,6 @@
 import asyncio
 from .manager import start_bot
-from telegram.mother.services.bot import database
+from mother.services.bot import database
 
 
 

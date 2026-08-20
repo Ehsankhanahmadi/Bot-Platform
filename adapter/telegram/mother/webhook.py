@@ -1,8 +1,10 @@
 import os
 from aiogram.types import Update
 
-from mother.bot import bot
-from mother.dispatcher import dp
+from .bot import bot
+from .dispatcher import dp
+
+from child.runtime.manager import shutdown_bots
 
 WEBHOOK_URL = os.getenv("WEBHOOK_URL")
 
@@ -21,3 +23,4 @@ async def set_webhook():
 
 async def shutdown():
     await bot.session.close()
+    await shutdown_bots()
