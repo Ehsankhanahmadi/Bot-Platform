@@ -2,7 +2,7 @@ from aiogram.filters import CommandStart, StateFilter
 from aiogram.types import Message
 from aiogram import Router
 
-from keyboards import verified_keyboard
+from keyboards.keyboard import verified_keyboard
 
 router = Router()
 

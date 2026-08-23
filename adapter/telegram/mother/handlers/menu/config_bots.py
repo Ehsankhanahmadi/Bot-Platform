@@ -4,8 +4,8 @@ from aiogram import F, Bot
 from aiogram.fsm.context import FSMContext
 
 from services import get_all_bot, get_all_active_bot, get_all_inactive_bot, get_bot_by_id, delete_bot_by_id, update_bot, status_change_bot
-from keyboards import config_keyboard, create_bot_keyboard, create_detail_bot_keyboard, create_delete_bot_keyboard, create_custom_back_keyboard
-from states import UserState
+from keyboards.keyboard import config_keyboard, create_bot_keyboard, create_detail_bot_keyboard, create_delete_bot_keyboard, create_custom_back_keyboard
+from states.state import UserState
 
 from . import router
 

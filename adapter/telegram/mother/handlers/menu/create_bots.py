@@ -3,8 +3,8 @@ from aiogram import F, Bot
 from aiogram.filters import StateFilter
 from aiogram.fsm.context import FSMContext
 
-from keyboards import read_help_keyboard
-from states import UserState
+from keyboards.keyboard import read_help_keyboard
+from states.state import UserState
 from services import create_bot
 
 from . import router

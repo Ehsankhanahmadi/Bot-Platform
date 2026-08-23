@@ -3,7 +3,7 @@ from aiogram.filters import StateFilter
 from aiogram import Router, F
 
 from cache.redis import redis
-from keyboards import verified_keyboard
+from keyboards.keyboard import verified_keyboard
 from services import verify_user
 
 router = Router()
