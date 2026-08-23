@@ -1,6 +1,6 @@
 from .registry import register_bot
-from ..bot import create_bot
-from ..dispatcher import get_dispatcher
+from bot import create_bot
+from dispatcher import get_dispatcher
 
 
 

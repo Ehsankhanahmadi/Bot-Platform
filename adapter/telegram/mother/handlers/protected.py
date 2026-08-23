@@ -1,6 +1,6 @@
 from aiogram import Router
 
-from mother.middlewares.check_verify import CheckVerifyUserMiddleware
+from middlewares.check_verify import CheckVerifyUserMiddleware
 
 from .menu import router as menu_router
 from .start import router as start_router

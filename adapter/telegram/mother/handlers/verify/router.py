@@ -3,9 +3,8 @@ from aiogram.filters import StateFilter
 from aiogram import Router, F
 
 from cache.redis import redis
-
-from mother.keyboards import verified_keyboard
-from mother.services import verify_user
+from keyboards import verified_keyboard
+from services import verify_user
 
 router = Router()
 

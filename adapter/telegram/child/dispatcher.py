@@ -1,4 +1,4 @@
-from .factory.dispatcher_factory import create_dispatcher
+from factory.dispatcher_factory import create_dispatcher
 
 
 

@@ -3,9 +3,9 @@ from aiogram import F, Bot
 from aiogram.filters import StateFilter
 from aiogram.fsm.context import FSMContext
 
-from mother.keyboards import read_help_keyboard
-from mother.states import UserState
-from mother.services import create_bot
+from keyboards import read_help_keyboard
+from states import UserState
+from services import create_bot
 
 from . import router
 

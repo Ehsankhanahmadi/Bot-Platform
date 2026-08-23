@@ -1,8 +1,8 @@
 from aiogram import BaseMiddleware
 from aiogram.types import TelegramObject, Message, CallbackQuery
 
-from ..services.user import get_one_user
-from ..keyboards import verify_keyboard
+from services.user import get_one_user
+from keyboards import verify_keyboard
 
 from redis.asyncio import Redis
 

@@ -3,7 +3,7 @@ import os
 from .worker import create_bot_worker
 from .registry import get_bot, get_all_bots, update_status, remove_bot
 
-WEBHOOK_URL = os.getenv("WEBHOOK_URL")
+WEBHOOK_URL = os.getenv("WEBHOOK_URL_CHILD")
 
 
 
@@ -14,6 +14,8 @@ async def start_bot(bot_config:dict):
     dp = bot["dispatcher"]
     await bot["bot"].delete_webhook(drop_pending_updates=True)
     await bot["bot"].set_webhook(url=f"{WEBHOOK_URL}/telegram/webhook/{bot_id}", allowed_updates=dp.resolve_used_update_types())
+    # await bot["bot"].set_webhook(url=f"{WEBHOOK_URL}/telegram/webhook/{bot_id}", allowed_updates=[])
+    print("Webhook Registered ✅")
     return True
 
 
@@ -27,10 +29,11 @@ async def stop_bot(bot_id:int):
     return True
 
 
-async def restart_bot(token:str,bot_id:int):
+async def restart_bot(bot_config: dict):
+    bot_id = bot_config["bot_id"]
     await stop_bot(bot_id)
     remove_bot(bot_id)
-    await start_bot(token,bot_id)
+    await start_bot(bot_config)
     return True
 
 

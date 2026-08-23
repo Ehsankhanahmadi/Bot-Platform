@@ -1,4 +1,4 @@
-from child.handlers import create_fallback_router
+from handlers import create_fallback_router
 
 
 
