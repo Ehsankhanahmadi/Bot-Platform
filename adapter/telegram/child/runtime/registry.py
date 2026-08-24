@@ -1,5 +1,5 @@
-from typing import Dict, Any
 import asyncio
+from typing import Dict, Any
 
 
 
@@ -7,30 +7,33 @@ registry: Dict[int, Dict[str, Any]] = {}
 registry_lock = asyncio.Lock()
 
 
-async def register_bot(bot_id:int,bot,dispatcher,webhook:str,config:dict):
+async def register_bot(bot_id: int,bot,dispatcher,webhook: str,config: dict,):
     async with registry_lock:
         registry[bot_id] = {
             "bot": bot,
             "dispatcher": dispatcher,
             "webhook": webhook,
             "status": "running",
-            "config": config
+            "config": config,
         }
 
 
-def remove_bot(bot_id:int):
-    if bot_id in registry:
-        del registry[bot_id]
+async def remove_bot(bot_id: int):
+    async with registry_lock:
+        registry.pop(bot_id, None)
 
 
-def get_bot(bot_id:int):
-    return registry.get(bot_id)
+async def get_bot(bot_id: int):
+    async with registry_lock:
+        return registry.get(bot_id)
 
 
-def get_all_bots():
-    return registry
+async def get_all_bots():
+    async with registry_lock:
+        return dict(registry)
 
 
-def update_status(bot_id:int,status:str):
-    if bot_id in registry:
-        registry[bot_id]["status"] = status
+async def update_status(bot_id: int, status: str):
+    async with registry_lock:
+        if bot_id in registry:
+            registry[bot_id]["status"] = status

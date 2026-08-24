@@ -24,4 +24,5 @@ async def sync_bots():
     for bot_config in database:
         if bot_config["active"]:
             tasks.append(asyncio.create_task(start_bot(bot_config)))
-    await asyncio.gather(*tasks)
+    if tasks:
+        await asyncio.gather(*tasks)

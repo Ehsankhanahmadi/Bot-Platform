@@ -17,7 +17,7 @@ class CheckVerifyUserMiddleware(BaseMiddleware):
         if not user:
             return await handler(event, data)
 
-        ban_key = f"ban:telegram:{user.id}"
+        ban_key = f"botplatform:telegram:mother:ban:{user.id}"
         if await self.redis.get(ban_key) == "1":
             if isinstance(event, Message):
                 await event.answer("🚫 شما به دلیل رعایت نکردن قوانین تا 24 ساعت آینده بن شدید.")
@@ -25,13 +25,13 @@ class CheckVerifyUserMiddleware(BaseMiddleware):
                 await event.answer("🚫 شما به دلیل رعایت نکردن قوانین تا 24 ساعت آینده بن شدید.",show_alert=True)
             return
 
-        verify_key = f"verify:telegram:{user.id}"
+        verify_key = f"botplatform:telegram:mother:verify:{user.id}"
         if await self.redis.get(verify_key) == "1":
             return await handler(event, data)
 
         user_main = await get_one_user(user)
         if user_main != "verified":
-            spam_key = f"spam:telegram:{user.id}"
+            spam_key = f"botplatform:telegram:mother:spam:{user.id}"
             count = await self.redis.incr(spam_key)
             if count == 1:
                 await self.redis.expire(spam_key, 86400)
