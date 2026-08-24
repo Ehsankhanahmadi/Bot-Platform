@@ -46,3 +46,8 @@ async def release_bot(bot_id: int) -> bool:
 
 async def get_bot_owner(bot_id: int):
     return await redis.get(owner_key(bot_id))
+
+
+async def is_bot_owner(bot_id: int) -> bool:
+    current_owner = await redis.get(owner_key(bot_id))
+    return current_owner == RUNTIME_ID
