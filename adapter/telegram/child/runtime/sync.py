@@ -1,6 +1,8 @@
 import asyncio
-from .manager import start_bot
+from .assignment import get_bot_assignment
+from .lifecycle import RUNTIME_ID
 from .ownership import claim_bot
+from .manager import start_bot
 from .lease import LeaseManager
 
 database = [
@@ -30,12 +32,17 @@ async def sync_bots():
     for bot_config in database:
         if not bot_config["active"]:
             continue
-        claimed = await claim_bot(bot_config["bot_id"])
-        if not claimed:
-            print(f"[SYNC] Bot {bot_config['bot_id']} "f"is owned by another runtime ❌")
+        bot_id = bot_config["bot_id"]
+        assigned_runtime = await get_bot_assignment(bot_id)
+        if assigned_runtime != RUNTIME_ID:
+            print(f"[SYNC] Bot {bot_id} assigned to {assigned_runtime} skipping...")
             continue
-        print(f"[SYNC] Bot {bot_config['bot_id']} "f"claimed by current runtime ✅")
-        lease_manager.add_bot(bot_config["bot_id"])
+        claimed = await claim_bot(bot_id)
+        if not claimed:
+            print(f"[SYNC] Bot {bot_id} "f"is owned by another runtime ❌")
+            continue
+        print(f"[SYNC] Bot {bot_id} "f"claimed by current runtime ✅")
+        lease_manager.add_bot(bot_id)
         tasks.append(asyncio.create_task(start_bot(bot_config)))
     lease_manager.start()
     if tasks:

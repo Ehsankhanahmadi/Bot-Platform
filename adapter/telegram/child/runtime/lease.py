@@ -2,7 +2,7 @@ import asyncio
 
 from .ownership import renew_bot_lease
 
-RENEW_INTERVAL = 10
+RENEW_INTERVAL = 30
 
 
 

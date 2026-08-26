@@ -3,7 +3,7 @@ import time
 from cache.redis import redis
 from .lifecycle import RUNTIME_ID
 
-LEASE_TTL = 30
+LEASE_TTL = 60
 
 
 
