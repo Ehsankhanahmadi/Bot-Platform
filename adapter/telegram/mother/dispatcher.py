@@ -2,7 +2,6 @@ from aiogram import Dispatcher
 from aiogram.fsm.storage.redis import RedisStorage
 
 from cache.redis import redis
-
 from handlers import protected_router, verify_router, fallback_router
 
 

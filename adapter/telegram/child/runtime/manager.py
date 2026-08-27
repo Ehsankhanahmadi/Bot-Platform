@@ -4,7 +4,6 @@ from .worker import create_bot_worker
 from .registry import get_bot, get_all_bots, remove_bot
 from .ownership import release_bot
 
-
 WEBHOOK_URL = os.getenv("WEBHOOK_URL")
 
 

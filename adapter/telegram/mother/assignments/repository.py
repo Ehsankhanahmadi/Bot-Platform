@@ -1,7 +1,7 @@
 from cache.redis import redis
 
-
 ASSIGNMENT_PREFIX = "botplatform:telegram:assignment:bot"
+
 
 
 def assignment_key(bot_id: int) -> str:

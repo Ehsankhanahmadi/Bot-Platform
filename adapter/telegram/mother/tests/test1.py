@@ -1,6 +1,5 @@
 from assignments import select_runtime
 
-
 runtimes = [
     {
         "runtime_id": "runtime-01",
@@ -20,6 +19,6 @@ runtimes = [
 ]
 
 
-runtime = select_runtime(runtimes)
 
+runtime = select_runtime(runtimes)
 print("Selected runtime:", runtime)

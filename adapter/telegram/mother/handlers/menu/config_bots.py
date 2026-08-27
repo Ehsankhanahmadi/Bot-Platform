@@ -124,12 +124,12 @@ async def handler_deactivate_bot(callback: CallbackQuery):
 
 
 @router.callback_query(StateFilter(None),F.data == "development_bot")
-async def handler_delete_bot(callback: CallbackQuery):
+async def handler_development_bot(callback: CallbackQuery):
     pass
 
 
 @router.callback_query(StateFilter(None),F.data == "renew_bot")
-async def handler_delete_bot(callback: CallbackQuery):
+async def handler_renew_bot(callback: CallbackQuery):
     pass
 
 
