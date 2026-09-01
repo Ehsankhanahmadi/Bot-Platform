@@ -3,13 +3,14 @@ from . import database
 
 
 # CREATE
-async def create_bot(botmain,token,userid,status:None):
+async def create_bot(botmain,token,userid,status):
     bot_new = {
         "token": f'{token}',
         "bot_username": f'@{botmain.username}',
         "bot_id": botmain.id,
         "user_id": userid,
-        "active": status | True
+        "active": status,
+        "assignment": None
     }
     for bot in database:
         if bot['bot_id'] == botmain.id:
