@@ -32,43 +32,53 @@ async def handler_read_help(callback:CallbackQuery, state:FSMContext):
 async def handler_give_token(message:Message, state:FSMContext):
     checking_message = await message.answer("در حال بررسی توکن ...")
     token = message.text.strip()
-    try:
-        bot = Bot(token)
-        bot_info = await bot.get_me()
-        bot_status = await create_bot(bot_info,token,message.from_user.id,True)
-        if bot_status:
-            runtime_id = await assign_bot(bot_info.id,runtimes)
-            if runtime_id is None:
-                print(f"[ASSIGNMENT] Bot {bot_info.id} could not be assigned ❌")
-            data={
-                "token": token,
-                "bot_username": f"@{bot_info.username}",
-                "bot_id": bot_info.id,
-                "user_id": message.from_user.id,
-                "active": True,
-            }
-            id = runtime_id.split("-")[1]
-            async with httpx.AsyncClient() as client:
-                response = await client.post(f"{os.getenv(f"RUNTIME_URL_{id}")}/telegram/{runtime_id}", json=data)
-                print(response,type(response))
-            if response:
-                print(f"[ASSIGNMENT] Bot {bot_info.id} started on {runtime_id} ✅")
-                for runtime in runtimes:
-                    if runtime["runtime_id"] == runtime_id:
-                        runtime["bot_count"] += 1
-                        break
-                await checking_message.edit_text(f"اطلاعات ربات شما ثبت شد :\n\ntoken : \n{token}\n\nusername : \n@{bot_info.username}")
-            else:
-                print(f"[RUNTIME] Failed to start bot {bot_info.id} on {runtime_id} ❌")
-                print(f"Status: {response.status_code}")
-                print(f"Response: {response.text}")
-                await checking_message.edit_text("ربات هنگام اجرا دچار مشکل شده است")
-        else:
-            await checking_message.edit_text("این ربات قبلا ساخته شده است لطفا توکن جدیدی را وارد نمایید")
-    except Exception as e:
-        print(e)
-        await checking_message.edit_text("لطفا مجدد تلاش کنید ارتباط با تلگرام با مشکل مواجه شد")
-    finally:
-        if "bot" in locals():
-            await bot.session.close()
+    result = await create_bot(token=token, userid=message.from_user.id, status=True) 
+    if not result["success"]: 
+        reason = result["reason"] 
+        if reason == "already_exists": 
+            await checking_message.edit_text("این ربات قبلا ساخته شده است لطفا توکن جدیدی را وارد نمایید") 
+        elif reason == "invalid_token": 
+            await checking_message.edit_text( "توکن وارد شده معتبر نیست" ) 
+        elif reason == "telegram_error": 
+            await checking_message.edit_text("لطفا مجدد تلاش کنید سرور تلگرام در دسترس نمی باشد") 
+        else: 
+            await checking_message.edit_text("هنگام ساخت ربات مشکلی به وجود آمد") 
+            return 
+    bot_info = result["bot"] 
+    print(f"[BOT] Bot {bot_info.id} created successfully ✅") 
+    runtime_id = await assign_bot(bot_info.id, runtimes) 
+    if runtime_id is None: 
+        print(f"[ASSIGNMENT] Bot {bot_info.id} could not be assigned ❌") 
+        await checking_message.edit_text("ربات با موفقیت ساخته شد ولی در اجرای ربات مشکلی پیش امده است با پشتیبانی تماس بگیرید") 
+        return 
+    print(f"[ASSIGNMENT] Bot {bot_info.id} assigned to {runtime_id} ✅") 
+    data = { 
+        "token": token, 
+        "bot_username": f"@{bot_info.username}", 
+        "bot_id": bot_info.id, 
+        "user_id": message.from_user.id, 
+        "active": True
+    } 
+    runtime_number = runtime_id.split("-")[1] 
+    runtime_url = os.getenv(f"RUNTIME_URL_{runtime_number}") 
+    if not runtime_url: 
+        print(f"[RUNTIME] URL not found for {runtime_id} ❌") 
+        await checking_message.edit_text("آدرس سرور اجرای ربات پیدا نشد") 
+        return 
+    try: 
+        async with httpx.AsyncClient() as client: 
+            response = await client.post( f"{runtime_url}/telegram/{runtime_id}", json=data, timeout=10) 
+            print(f"[RUNTIME] Response: {response.status_code} {response.text}") 
+            if response.is_success: 
+                print(f"[RUNTIME] Bot {bot_info.id} started on {runtime_id} ✅") 
+                await checking_message.edit_text(f"اطلاعات ربات شما ثبت شد :\n\ntoken : \n{token}\n\nusername : \n@{bot_info.username}") 
+            else: 
+                print(f"[RUNTIME] Failed to start bot {bot_info.id} ❌") 
+                await checking_message.edit_text("ربات با موفقیت ساخته شد ولی در هنگام اجرا در سرور مورد نظر با مشکل مواجه شد") 
+    except httpx.RequestError as e: 
+        print(f"[RUNTIME] Connection error: {e}") 
+        await checking_message.edit_text("لطفا کمی بعد تلاش کنید سروری در دسترس نیست") 
+    except httpx.HTTPError as e: 
+        print(f"[RUNTIME] HTTP error: {e}") 
+        await checking_message.edit_text("مشکلی در ارتباط به سرور به وجود امده است") 
     await state.clear()
