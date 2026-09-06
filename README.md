@@ -92,6 +92,42 @@ All other project files and directories must follow the project's naming convent
 
 ---
 
+# ⚠️ APIS
+
+The backend project structure should be developed in this way.
+
+```text
+api/
+├── config/
+├── core/
+|     |__models/
+|     |     |__(__init__.py)
+|     |     |__modelname.py
+|     |
+|     |__(__init__.py)    
+|     |__admin.py    
+|     |__apps.py    
+|     |__tests.py    
+|      
+└── other.../
+       |__serializers/
+       |     |__(__init__.py)
+       |     |__serializername.py
+       |     
+       |__views/
+       |    |__(__init__.py)
+       |    |__viewname.py
+       |
+       |__(__init__.py)
+       |__apps.py
+       |__tests.py
+       |__urls.py
+```
+
+All models are defined within the **core**; there is no need to include **serializers** there, as we can define serializers for the specific models within the respective apps. Furthermore, there is no need to define models inside those apps—though we could create one if necessary—but for now, it is better to keep all models in a single location.
+
+---
+
 # ⚠️ Adapters
 
 Each supported messaging platform is developed as an **independent adapter**. Every adapter is responsible only for communicating with its own platform and should not contain business logic that belongs to the project's core API.

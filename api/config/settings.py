@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'drf_spectacular',
     'django_celery_results',
     # bot startapp
+    'core',
     'mothers',
 ]
 
