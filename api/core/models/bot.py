@@ -1,5 +1,5 @@
 from django.db import models
-from models import RunTime, BusinessOwner
+from core.models import RunTime, BusinessOwner
 
 
 
@@ -9,7 +9,7 @@ class Bot(models.Model):
     token = models.CharField(max_length=255)
     owner = models.ForeignKey(BusinessOwner, on_delete=models.CASCADE)
     status = models.BooleanField(default=True)
-    assignment = models.ForeignKey(RunTime, on_delete=models.SET_NULL, default=None)
+    assignment = models.ForeignKey(RunTime, on_delete=models.SET_NULL, default=None, null=True)
 
     def __str__(self):
         return self.bot_username

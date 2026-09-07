@@ -4,7 +4,7 @@ from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, Spec
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-
+    path('mothers/', include("mothers.urls")),
     
     ########################################### this is schema swagger ###########################################
     # drf-spectacular
