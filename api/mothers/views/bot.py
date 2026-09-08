@@ -9,21 +9,16 @@ from mothers.serializers import BotSerializer
 
 class GetAllBotView(APIView):
     def get(self, request):
-        try:
-            bots = Bot.objects.all()
-            serializer = BotSerializer(bots,many=True)
-            return Response(serializer.data,status=status.HTTP_200_OK)
-        except Bot.DoesNotExist as e:
-            return Response(e,status=status.HTTP_400_BAD_REQUEST)
+        bots = Bot.objects.all()
+        serializer = BotSerializer(bots,many=True)
+        return Response(serializer.data,status=status.HTTP_200_OK)
 
 
 class GetOneBotView(APIView):
-    def get(self, request, bot_id=None):
-        if bot_id is None:
-            return Response({"error":"bot_id is required"},status=status.HTTP_400_BAD_REQUEST)
+    def get(self, request, bot_id):
         try:
             bot = Bot.objects.get(bot_id=bot_id)
             serializer = BotSerializer(bot)
             return Response(serializer.data,status=status.HTTP_200_OK)
-        except Bot.DoesNotExist as e:
-            return Response(e,status=status.HTTP_400_BAD_REQUEST)
+        except Bot.DoesNotExist:
+            return Response({"error":"bot not found"},status=status.HTTP_404_NOT_FOUND)
