@@ -124,7 +124,10 @@ api/
        |__urls.py
 ```
 
+These rules must also be followed in URLs.
 All models are defined within the **core**; there is no need to include **serializers** there, as we can define serializers for the specific models within the respective apps. Furthermore, there is no need to define models inside those apps—though we could create one if necessary—but for now, it is better to keep all models in a single location.
+
+The backend **API** structure for the project is as follows: **Get all** operations must be separated from **Get one** operations. For instance, methods such as **"Get one",  "post", "PUT," and "DELETE"** are grouped within a single class named **CRUD** though exceptions exist—such as verification logic. The APIs should be implemented using a **class-based** approach.
 
 ---
 
