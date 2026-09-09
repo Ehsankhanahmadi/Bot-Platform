@@ -58,12 +58,6 @@ class GetAllInactiveBotOwnerView(APIView):
 
 
 class CRUDBotOwnerView(APIView):
-    def check_sync(self,request,owner_id,bot_id):
-        if request.data["owner"] == owner_id and request.data["bot_id"] == bot_id:
-            return True
-        return False
-
-
     def get(self, request, owner_id, bot_id):
         try:
             bot = Bot.objects.get(bot_id=bot_id, owner=owner_id)
@@ -74,8 +68,7 @@ class CRUDBotOwnerView(APIView):
 
 
     def post(self, request, owner_id, bot_id):
-        check = self.check_sync(request,owner_id,bot_id)
-        if not check:
+        if request.data["owner"] != owner_id or request.data["bot_id"] != bot_id:
             return Response({"error":"please set true value owner_id and bot_id"})    
         if Bot.objects.filter(bot_id=bot_id).exists():
             return Response({"detail":"bot already exists"},status=status.HTTP_400_BAD_REQUEST)
