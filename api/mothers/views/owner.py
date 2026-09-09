@@ -7,7 +7,7 @@ from mothers.serializers import BusinessOwnerSerializer, BotSerializer
 
 
 
-class GetOneOwnerView(APIView):
+class CRUDOwnerView(APIView):
     def get(self, request, owner_id):
         try:
             owner = BusinessOwner.objects.get(telegram_id=owner_id)
@@ -17,7 +17,7 @@ class GetOneOwnerView(APIView):
             return Response({"error":"owner not found"},status=status.HTTP_404_NOT_FOUND)
 
 
-class VerifyOwnerView(APIView):
+    # verify section
     def post(self, request, owner_id):
         if owner_id != request.data["telegram_id"]:
             return Response({"error":"owner_id error please check owner_id is sync with telegram_id"},status=status.HTTP_400_BAD_REQUEST)
@@ -29,32 +29,6 @@ class VerifyOwnerView(APIView):
             return Response(serializer.data,status=status.HTTP_201_CREATED)
         return Response(serializer.errors,status=status.HTTP_400_BAD_REQUEST)
 
-
-class GetAllBotOwnerView(APIView):
-    def get(self, request, owner_id):
-        bots = Bot.objects.filter(owner=owner_id)
-        if bots is None:
-            return Response({"error":"bots not found"},status=status.HTTP_404_NOT_FOUND)
-        serializer = BotSerializer(bots,many=True)
-        return Response(serializer.data,status=status.HTTP_200_OK)
-
-
-class GetAllActiveBotOwnerView(APIView):
-    def get(self, request, owner_id):
-        actives_bot = Bot.objects.filter(status=True,owner=owner_id)
-        if actives_bot is None:
-            return Response({"error":"active bots not found"},status=status.HTTP_404_NOT_FOUND)
-        serializer = BotSerializer(actives_bot,many=True)
-        return Response(serializer.data,status=status.HTTP_200_OK)
-
-
-class GetAllInactiveBotOwnerView(APIView):
-    def get(self, request, owner_id):
-        inactives_bot = Bot.objects.filter(status=False,owner=owner_id)
-        if inactives_bot is None:
-            return Response({"error":"inactive bots not found"},status=status.HTTP_404_NOT_FOUND)
-        serializer = BotSerializer(inactives_bot,many=True)
-        return Response(serializer.data,status=status.HTTP_200_OK)
 
 
 class CRUDBotOwnerView(APIView):

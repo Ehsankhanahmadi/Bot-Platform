@@ -1,2 +1,2 @@
-from .owner import GetOneOwnerView, VerifyOwnerView, GetAllBotOwnerView, GetAllActiveBotOwnerView, GetAllInactiveBotOwnerView, CRUDBotOwnerView
+from .owner import CRUDOwnerView, CRUDBotOwnerView
 from .bot import GetAllBotView, GetOneBotView

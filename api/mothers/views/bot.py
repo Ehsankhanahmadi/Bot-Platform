@@ -10,8 +10,11 @@ from mothers.serializers import BotSerializer
 class GetAllBotView(APIView):
     def get(self, request):
         bots = Bot.objects.all()
+        if not bots:
+            return Response({"error":"bots not found"},status=status.HTTP_404_NOT_FOUND)
         serializer = BotSerializer(bots,many=True)
         return Response(serializer.data,status=status.HTTP_200_OK)
+
 
 
 class GetOneBotView(APIView):
