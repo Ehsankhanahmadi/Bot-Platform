@@ -1,0 +1,12 @@
+<div style="display: flex; gap: 8px; align-items: center; width: 100%;">
+    {% include "django/forms/widgets/text.html" %}
+    <a href="{% url 'admin:runtime-generate-token' widget.attrs.runtime_id %}" style="text-decoration: none;" class="button">
+        Generate Token
+    </a>
+    <a href="{% url 'admin:runtime-copy-token' widget.attrs.runtime_id %}" style="text-decoration: none;" class="button">
+        Copy
+    </a>
+    <a href="{% url 'admin:runtime-hash-token' widget.attrs.runtime_id %}" style="text-decoration: none;" class="button">
+        Hash
+    </a>
+</div>

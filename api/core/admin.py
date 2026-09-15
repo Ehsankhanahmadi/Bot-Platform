@@ -35,12 +35,32 @@ class RunTimeAdmin(BaseAdmin):
                 self.admin_site.admin_view(self.generate_token),
                 name="runtime-generate-token",
             ),
+            path(
+                "<path:object_id>/copy-token/",
+                self.admin_site.admin_view(self.copy_token),
+                name="runtime-copy-token",
+            ),
+            path(
+                "<path:object_id>/hash-token/",
+                self.admin_site.admin_view(self.hash_token),
+                name="runtime-hash-token",
+            ),
         ]
         return custom_urls + urls
 
     def generate_token(self, request, object_id):
         runtime = self.get_object(request, object_id)
         print("Generate token for:", runtime)
+        return redirect("admin:core_runtime_change",object_id)
+
+    def copy_token(self, request, object_id):
+        runtime = self.get_object(request, object_id)
+        print("copy token for:", runtime)
+        return redirect("admin:core_runtime_change",object_id)
+
+    def hash_token(self, request, object_id):
+        runtime = self.get_object(request, object_id)
+        print("hash token for:", runtime)
         return redirect("admin:core_runtime_change",object_id)
 
 
