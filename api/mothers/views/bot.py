@@ -1,6 +1,7 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+from core.authentication import RuntimeAuthentication, IsRuntime
 
 from core.models import Bot
 from mothers.serializers import BotRUDSerializer
@@ -8,6 +9,8 @@ from mothers.serializers import BotRUDSerializer
 
 
 class GetAllBotView(APIView):
+    authentication_classes = [RuntimeAuthentication]
+    permission_classes = [IsRuntime]
     def get(self, request):
         bots = Bot.objects.all()
         serializer = BotRUDSerializer(bots,many=True)
@@ -16,6 +19,8 @@ class GetAllBotView(APIView):
 
 
 class GetOneBotView(APIView):
+    authentication_classes = [RuntimeAuthentication]
+    permission_classes = [IsRuntime]
     def get(self, request, bot_id):
         try:
             bot = Bot.objects.get(bot_id=bot_id)

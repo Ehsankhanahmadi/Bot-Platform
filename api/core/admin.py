@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth.hashers import make_password
 from django.urls import path
+from django.shortcuts import redirect
 from .models import RunTime, BusinessOwner, Bot
 from .forms import RunTimeAdminForm
 
@@ -16,6 +17,7 @@ class BaseAdmin(admin.ModelAdmin):
         }
 
 
+
 admin.site.unregister(User)
 @admin.register(User)
 class CustomUserAdmin(UserAdmin):
@@ -23,6 +25,7 @@ class CustomUserAdmin(UserAdmin):
         css = {
             "all": ("core/css/custom_admin.css",)
         }
+
 
 
 @admin.register(RunTime)
@@ -54,9 +57,11 @@ class RunTimeAdmin(BaseAdmin):
         return JsonResponse({"detail": "Token hashed successfully"})
 
 
+
 @admin.register(BusinessOwner)
 class BusinessOwnerAdmin(BaseAdmin):
     pass
+
 
 
 @admin.register(Bot)

@@ -125,6 +125,10 @@ STATIC_URL = 'static/'
 REST_FRAMEWORK = {
     # YOUR SETTINGS
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+    # AUTHENTICATION
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "core.authentication.RuntimeAuthentication",
+    ],
 }
 
 SPECTACULAR_SETTINGS = {

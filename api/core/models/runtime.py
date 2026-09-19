@@ -1,6 +1,7 @@
 from django.db import models
 
 
+
 class RunTime(models.Model):
     runtime_id = models.CharField(max_length=50, unique=True)
     token = models.CharField(max_length=255,unique=True,null=True,blank=True)
