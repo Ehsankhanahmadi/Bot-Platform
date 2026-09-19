@@ -1,8 +1,9 @@
+from django.http import JsonResponse
 from django.contrib import admin
 from django.contrib.auth.models import User
 from django.contrib.auth.admin import UserAdmin
+from django.contrib.auth.hashers import make_password
 from django.urls import path
-from django.shortcuts import redirect
 from .models import RunTime, BusinessOwner, Bot
 from .forms import RunTimeAdminForm
 
@@ -31,16 +32,6 @@ class RunTimeAdmin(BaseAdmin):
         urls = super().get_urls()
         custom_urls = [
             path(
-                "<path:object_id>/generate-token/",
-                self.admin_site.admin_view(self.generate_token),
-                name="runtime-generate-token",
-            ),
-            path(
-                "<path:object_id>/copy-token/",
-                self.admin_site.admin_view(self.copy_token),
-                name="runtime-copy-token",
-            ),
-            path(
                 "<path:object_id>/hash-token/",
                 self.admin_site.admin_view(self.hash_token),
                 name="runtime-hash-token",
@@ -48,20 +39,19 @@ class RunTimeAdmin(BaseAdmin):
         ]
         return custom_urls + urls
 
-    def generate_token(self, request, object_id):
-        runtime = self.get_object(request, object_id)
-        print("Generate token for:", runtime)
-        return redirect("admin:core_runtime_change",object_id)
-
-    def copy_token(self, request, object_id):
-        runtime = self.get_object(request, object_id)
-        print("copy token for:", runtime)
-        return redirect("admin:core_runtime_change",object_id)
-
     def hash_token(self, request, object_id):
+        if request.method != "POST":
+            return JsonResponse({"error": "POST request required"},status=405)
         runtime = self.get_object(request, object_id)
-        print("hash token for:", runtime)
-        return redirect("admin:core_runtime_change",object_id)
+        if runtime is None:
+            return JsonResponse({"error": "Runtime not found"},status=404)
+        token = request.POST.get("token")
+        if not token:
+            return JsonResponse({"error": "Token is required"},status=400)
+        hashed_token = make_password(token)
+        runtime.token = hashed_token
+        runtime.save(update_fields=["token"])
+        return JsonResponse({"detail": "Token hashed successfully"})
 
 
 @admin.register(BusinessOwner)
