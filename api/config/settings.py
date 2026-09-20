@@ -155,3 +155,18 @@ SPECTACULAR_SETTINGS = {
 
 CELERY_BROKER_URL = env('CELERY_BROKER')
 CELERY_RESULT_BACKEND = "django-db"
+
+
+# CACHES
+
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://redis:6379/1",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        },
+        "KEY_PREFIX": "bot_platform",
+        "TIMEOUT": 300,
+    },
+}

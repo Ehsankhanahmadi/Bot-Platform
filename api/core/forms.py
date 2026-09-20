@@ -17,6 +17,20 @@ class TokenWidget(forms.TextInput):
 
 
 
+class StatusWidget(forms.CheckboxInput):
+    template_name = "core/widgets/status.html"
+    def __init__(self, *args, runtime_id=None, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.runtime_id = runtime_id
+
+    def get_context(self, name, value, attrs):
+        context = super().get_context(name, value, attrs)
+        if self.runtime_id is not None:
+            context["widget"]["attrs"]["runtime_id"] = self.runtime_id
+        return context
+
+
+
 class RunTimeAdminForm(forms.ModelForm):
     class Meta:
         model = RunTime
@@ -24,8 +38,10 @@ class RunTimeAdminForm(forms.ModelForm):
 
         widgets = {
             "token": TokenWidget(),
+            "status": StatusWidget()
         }
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields["token"].widget.runtime_id = (self.instance.pk if self.instance.pk else None)
+        self.fields["status"].widget.runtime_id = (self.instance.pk if self.instance.pk else None)
