@@ -31,7 +31,6 @@ class CustomUserAdmin(UserAdmin):
 
 @admin.register(RunTime)
 class RunTimeAdmin(BaseAdmin):
-    readonly_fields=["password"]
     form = RunTimeAdminForm
     def get_urls(self):
         urls = super().get_urls()
@@ -46,6 +45,12 @@ class RunTimeAdmin(BaseAdmin):
                 self.admin_site.admin_view(self.clear_cache),
                 name="runtime-clear-cache",
             ),
+            path(
+                "<path:object_id>/password-clear-cache/",
+                self.admin_site.admin_view(self.password_clear_cache),
+                name="runtime-password-clear-cache",
+            ),
+
         ]
         return custom_urls + urls
 
@@ -78,7 +83,23 @@ class RunTimeAdmin(BaseAdmin):
         runtime.status = status_value.lower() == "true"
         runtime.save(update_fields=["status"])
         delete_runtime_cache(runtime.runtime_id)
-        return JsonResponse({"detail": "clear cache and change status successfully"})
+        return JsonResponse({"detail": "Clear cache and change status successfully"})
+
+
+    def password_clear_cache(self, request, object_id):
+        if request.method != "POST":
+            return JsonResponse({"error": "POST request required"},status=405)
+        runtime = self.get_object(request, object_id)
+        if runtime is None:
+            return JsonResponse({"error": "Runtime not found"},status=404)
+        password_value = request.POST.get("password")
+        if password_value is None:
+            return JsonResponse({"error": "password value is required"}, status=400)
+        runtime.password = password_value
+        runtime.save(update_fields=["password"])
+        delete_runtime_cache(runtime.runtime_id)
+        return JsonResponse({"detail": "Password clear cache successfully"})
+
 
 
 @admin.register(BusinessOwner)
