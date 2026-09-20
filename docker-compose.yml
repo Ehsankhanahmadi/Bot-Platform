@@ -17,6 +17,7 @@ services:
       - .env
     depends_on:
       - postgres
+      - redis
       - rabbitmq
     networks:
       - bot_platform
@@ -102,6 +103,13 @@ services:
     - "15672:15672"
     env_file:
       - .env
+    networks:
+      - bot_platform
+
+  redis:
+    image: redis:7-alpine
+    container_name: redis_bot_platform
+    restart: unless-stopped
     networks:
       - bot_platform
 

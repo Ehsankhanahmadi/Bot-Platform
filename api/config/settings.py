@@ -101,6 +101,13 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+PASSWORD_HASHERS = [
+    "django.contrib.auth.hashers.Argon2PasswordHasher",
+    "django.contrib.auth.hashers.PBKDF2PasswordHasher",
+    "django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher",
+    "django.contrib.auth.hashers.BCryptSHA256PasswordHasher",
+    "django.contrib.auth.hashers.ScryptPasswordHasher",
+]
 
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
@@ -128,6 +135,10 @@ REST_FRAMEWORK = {
     # AUTHENTICATION
     "DEFAULT_AUTHENTICATION_CLASSES": [
         "core.authentication.RuntimeAuthentication",
+    ],
+    # PERMISSON
+    "DEFAULT_PERMISSION_CLASSES": [
+        "core.authentication.IsRuntime",
     ],
 }
 
