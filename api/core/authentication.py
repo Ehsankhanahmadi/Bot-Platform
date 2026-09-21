@@ -10,7 +10,6 @@ from .cache import cache_runtime, get_cached_runtime
 
 
 class RuntimeAuthentication(BaseAuthentication):
-    CACHE_TIMEOUT = 120
     def authenticate(self, request):
         authorization = request.headers.get("Authorization")
         runtime_id = request.headers.get("Runtime")
