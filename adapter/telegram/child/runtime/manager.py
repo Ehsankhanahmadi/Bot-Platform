@@ -2,7 +2,7 @@ import os
 
 from .worker import create_bot_worker
 from .registry import get_bot, get_all_bots, remove_bot
-from .ownership import release_bot
+# from .ownership import release_bot
 
 WEBHOOK_URL = os.getenv("WEBHOOK_URL")
 
@@ -36,7 +36,7 @@ async def stop_bot(bot_id: int):
         await bot.session.close()
     except Exception:
         pass
-    await release_bot(bot_id)
+    # await release_bot(bot_id)
     await remove_bot(bot_id)
     return True
 
@@ -54,5 +54,5 @@ async def shutdown_bots():
             await bot.session.close()
         except Exception:
             pass
-        await release_bot(bot_id)
+        # await release_bot(bot_id)
         await remove_bot(bot_id)

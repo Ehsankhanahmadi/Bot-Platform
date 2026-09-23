@@ -5,11 +5,11 @@ from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
 from runtime.manager import start_bot
-from runtime.sync import sync_bots, lease_manager
+from runtime.sync import sync_bots # lease_manager
 from runtime.manager import shutdown_bots
 from gateway.webhook import process_child_update
-from runtime.ownership import claim_bot
-from runtime.assignment import get_bot_assignment
+# from runtime.ownership import claim_bot
+# from runtime.assignment import get_bot_assignment
 from runtime.lifecycle import RUNTIME_ID
 
 @asynccontextmanager
@@ -51,17 +51,17 @@ async def run_new_bot(runtime_id: str, data: BotModel):
     }
     try:
         bot_id = data.bot_id
-        assigned_runtime = await get_bot_assignment(bot_id)
-        if assigned_runtime != RUNTIME_ID:
-            print(f"[SYNC] Bot {bot_id} assigned to {assigned_runtime} skipping...")
-        claimed = await claim_bot(bot_id)
-        if not claimed:
-            print(f"[SYNC] Bot {bot_id} "f"is owned by another runtime ❌")
-        print(f"[SYNC] Bot {bot_id} "f"claimed by current runtime ✅")
-        lease_manager.add_bot(bot_id)
-        result = await start_bot(bot_config)
-        if result:
-            return {"status": True,"bot_id": data.bot_id}
+        # assigned_runtime = await get_bot_assignment(bot_id)
+        # if assigned_runtime != RUNTIME_ID:
+        #     print(f"[SYNC] Bot {bot_id} assigned to {assigned_runtime} skipping...")
+        # claimed = await claim_bot(bot_id)
+        # if not claimed:
+        #     print(f"[SYNC] Bot {bot_id} "f"is owned by another runtime ❌")
+        # print(f"[SYNC] Bot {bot_id} "f"claimed by current runtime ✅")
+        # lease_manager.add_bot(bot_id)
+        # result = await start_bot(bot_config)
+        # if result:
+        #     return {"status": True,"bot_id": data.bot_id}
         return JSONResponse(status_code=500,content={"status": False,"error": "start_bot returned False",})
     except Exception as e:
         import traceback
