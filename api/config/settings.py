@@ -138,7 +138,7 @@ REST_FRAMEWORK = {
     ],
     # PERMISSON
     "DEFAULT_PERMISSION_CLASSES": [
-        "core.authentication.IsRuntime",
+        "core.permissions.IsRuntime",
     ],
 }
 

@@ -1,5 +1,4 @@
 from rest_framework.authentication import BaseAuthentication
-from rest_framework.permissions import BasePermission
 from rest_framework.exceptions import AuthenticationFailed
 
 from django.contrib.auth.hashers import check_password
@@ -37,9 +36,3 @@ class RuntimeAuthentication(BaseAuthentication):
             raise AuthenticationFailed("Invalid runtime credentials.")
         cache_runtime(runtime, password, token)
         return (runtime, None)
-
-
-
-class IsRuntime(BasePermission):
-    def has_permission(self, request, view):
-        return isinstance(request.user, RunTime)

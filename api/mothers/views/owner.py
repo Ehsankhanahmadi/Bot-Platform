@@ -3,11 +3,12 @@ from rest_framework.response import Response
 from rest_framework import status
 
 from core.models import BusinessOwner, Bot
+from core.permissions import IsMotherRuntime
 from mothers.serializers import BusinessOwnerRUDSerializer, BusinessOwnerVerifySerializer, BotRUDSerializer, BotCreateSerializer
 
 
-
 class CRUDOwnerView(APIView):
+    permission_classes = [IsMotherRuntime]
     def get(self, request, owner_id):
         try:
             owner = BusinessOwner.objects.get(telegram_id=owner_id)
@@ -32,6 +33,7 @@ class CRUDOwnerView(APIView):
 
 
 class CRUDBotOwnerView(APIView):
+    permission_classes = [IsMotherRuntime]
     def get(self, request, owner_id, bot_id):
         try:
             bot = Bot.objects.get(bot_id=bot_id, owner=owner_id)
