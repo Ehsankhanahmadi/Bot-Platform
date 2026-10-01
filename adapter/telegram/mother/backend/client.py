@@ -14,7 +14,7 @@ class BackendClient:
                     f"{settings.runtime}"
                 ),
                 "Password": (
-                    f"{settings.backend_password}"
+                    f"{settings.backend_password.get_secret_value()}"
                 ),
                 "Authorization": (
                     f"Bearer {settings.backend_token.get_secret_value()}"
