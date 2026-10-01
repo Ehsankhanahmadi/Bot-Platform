@@ -59,7 +59,7 @@ async def handler_give_token(message:Message, state:FSMContext):
         "user_id": message.from_user.id, 
         "active": True
     } 
-    runtime_number = runtime_id.split("-")[1] 
+    runtime_number = runtime_id.split("-")[-1] 
     runtime_url = os.getenv(f"RUNTIME_URL_{runtime_number}") 
     if not runtime_url: 
         print(f"[RUNTIME] URL not found for {runtime_id} ❌") 
