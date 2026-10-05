@@ -4,6 +4,8 @@ from .views import (
     CRUDBotOwnerView,
     GetAllBotView,
     GetOneBotView,
+    GetAllRunTimeView,
+    CRUDRunTimeView
     )
 
 urlpatterns = [ 
@@ -12,4 +14,7 @@ urlpatterns = [
     
     path("bots/", GetAllBotView.as_view()),
     path("bots/<int:bot_id>/", GetOneBotView.as_view()), 
+
+    path("runtimes/", GetAllRunTimeView.as_view()),
+    path("runtimes/<str:runtime_id>", CRUDRunTimeView.as_view())
 ]
