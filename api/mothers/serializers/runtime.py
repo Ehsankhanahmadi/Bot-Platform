@@ -3,7 +3,7 @@ from core.models import RunTime
 
 
 
-class RunTimeMotherRUSerializer(serializers.ModelSerializer):
+class RunTimeMotherRSerializer(serializers.ModelSerializer):
     class Meta:
         model = RunTime
         fields = ["runtime_id","status","bot_count"]

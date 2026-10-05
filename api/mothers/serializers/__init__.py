@@ -1,3 +1,3 @@
 from .bot import BotRUDSerializer, BotCreateSerializer
 from .businessowner import BusinessOwnerRUDSerializer, BusinessOwnerVerifySerializer
-from .runtime import RunTimeMotherRUSerializer, RunTimeBackendRUSerializer
+from .runtime import RunTimeMotherRSerializer, RunTimeBackendRUSerializer
