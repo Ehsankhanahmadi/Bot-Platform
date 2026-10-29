@@ -1,0 +1,123 @@
+services:
+  drf:
+    container_name: drf_bot_platform
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    environment:
+      ALLOWED_HOSTS: ${ALLOWED_HOSTS}
+      DEBUG: ${DEBUG}
+      SECRET_KEY: ${SECRET_KEY}
+    volumes:
+      - ./api:/app/
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+      - redis
+      - rabbitmq
+    networks:
+      - bot_platform
+  
+  celery:
+    container_name: celery_bot_platform
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    command: celery -A config worker -l INFO
+    environment:
+      ALLOWED_HOSTS: ${ALLOWED_HOSTS}
+      DEBUG: ${DEBUG}
+      SECRET_KEY: ${SECRET_KEY}
+    volumes:
+      - ./api:/app/
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+      - rabbitmq
+      - drf
+    networks:
+      - bot_platform
+  
+  flower:
+    image: mher/flower
+    container_name: flower_bot_platform
+    restart: unless-stopped
+    command: celery --broker=${CELERY_BROKER} flower --port=5555 --basic-auth=${FLOWER_USER}:${FLOWER_PASSWORD}
+    ports:
+      - "5555:5555"
+    env_file:
+      - .env
+    depends_on:
+      - rabbitmq
+      - celery
+    networks:
+      - bot_platform
+  
+  postgres:
+    image: postgres:17
+    container_name: postgres_bot_platform
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    env_file:
+      - .env
+    networks:
+      - bot_platform
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin_bot_platform
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
+    ports:
+      - "5050:80"
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+    networks:
+      - bot_platform
+
+  rabbitmq:
+    image: rabbitmq:4-management
+    container_name: rabbitmq_bot_platform
+    restart: unless-stopped
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_DEFAULT_USER}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_DEFAULT_PASS}
+    ports:
+    - "5672:5672"
+    - "15672:15672"
+    env_file:
+      - .env
+    networks:
+      - bot_platform
+
+  redis:
+    image: redis:7-alpine
+    container_name: redis_bot_platform
+    restart: unless-stopped
+    volumes:
+      - redis_data:/data
+    networks:
+      - bot_platform
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  bot_platform:
