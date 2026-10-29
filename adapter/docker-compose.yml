@@ -1,0 +1,66 @@
+services:
+  mother:
+    container_name: telegram_mother
+    build:
+      context: ./telegram/mother
+      dockerfile: Dockerfile
+    command: uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+    volumes:
+      - ./telegram/mother:/app
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./telegram/mother/.env
+    depends_on:
+      - redis
+    networks:
+      - adapter_telegram
+  
+  child:
+    container_name: telegram_child
+    build:
+      context: ./telegram/child
+      dockerfile: Dockerfile
+    command: uvicorn app:app --host 0.0.0.0 --port 8001 --reload
+    volumes:
+      - ./telegram/child:/app
+    ports:
+      - "8001:8001"
+    env_file:
+      - ./telegram/child/.env
+    depends_on:
+      - redis
+    networks:
+      - adapter_telegram
+
+  # childnew:
+  #   container_name: telegram_childnew
+  #   build:
+  #     context: ./telegram/childnew
+  #     dockerfile: Dockerfile
+  #   command: uvicorn app:app --host 0.0.0.0 --port 8002 --reload
+  #   volumes:
+  #     - ./telegram/childnew:/app
+  #   ports:
+  #     - "8002:8002"
+  #   env_file:
+  #     - ./telegram/childnew/.env
+  #   depends_on:
+  #     - redis
+  #   networks:
+  #     - adapter_telegram
+
+  redis:
+    image: redis:7-alpine
+    container_name: telegram_redis
+    restart: unless-stopped
+    volumes:
+      - redis_data:/data
+    networks:
+      - adapter_telegram
+
+networks:
+  adapter_telegram:
+
+volumes:
+  redis_data:
