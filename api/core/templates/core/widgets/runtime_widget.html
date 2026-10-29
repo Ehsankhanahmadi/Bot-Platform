@@ -1,0 +1,36 @@
+{% if widget.attrs.runtime_id %}
+    {% if widget.name == "token" %}
+        <div style="display: flex; gap: 8px; align-items: center; width: 100%;">
+            {% include "django/forms/widgets/text.html" %}
+            <button type="button" class="button" style="padding: 4px;" id="generate-token-btn">
+                Generate Token
+            </button>
+            <button type="button" class="button" style="padding: 4px;" id="copy-token-btn">
+                Copy
+            </button>
+            <button type="button" class="button" style="padding: 4px;" id="hash-token-btn" data-url="{% url 'admin:runtime-hash-token' widget.attrs.runtime_id %}">
+                Hash
+            </button>
+        </div>
+    {% elif widget.name == "status" %}
+        <div style="display: flex; gap: 8px; align-items: center; order: 1; width: auto;">
+            {% include "django/forms/widgets/checkbox.html" %}
+            <button type="button" class="button" style="padding: 4px;" id="clear-cache-btn" data-url="{% url 'admin:runtime-clear-cache' widget.attrs.runtime_id %}">
+                clear cache
+            </button>
+        </div>
+    {% elif widget.name == "password" %}
+        <div style="display: flex; gap: 8px; align-items: center; width: 100%;">
+            {% include "django/forms/widgets/text.html" %}
+            <button type="button" class="button" style="padding: 4px;" id="generate-password-btn">
+                Generate password
+            </button>
+            <button type="button" class="button" style="padding: 4px;" id="copy-password-btn">
+                Copy
+            </button>
+            <button type="button" class="button" style="padding: 4px;" id="clear-cache-password-btn" data-url="{% url 'admin:runtime-password-clear-cache' widget.attrs.runtime_id %}">
+                clear cache
+            </button>
+        </div>
+    {% endif %}
+{% endif %}
