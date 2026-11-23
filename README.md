@@ -240,3 +240,8 @@ bots/
 
 In this case, the Router should be created once and exposed through `__init__.py`, allowing the Dispatcher to include the entire feature with a single import.
 The Dispatcher should only include feature routers and should never contain business logic.
+
+## License
+
+This project is licensed under the MIT License.
+See the [LICENSE](LICENSE) file for details.
