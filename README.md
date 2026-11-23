@@ -7,7 +7,6 @@ Once your access has been approved, click the ⭐ **Star** button at the top of 
 
 ---
 
-
 # Project Development Guidelines
 
 # ⚠️ Project Structure
